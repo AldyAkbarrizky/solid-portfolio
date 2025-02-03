@@ -13,6 +13,7 @@ export default withSentryConfig(nextConfig, {
 
   org: "argoblessed-software",
   project: "javascript-nextjs",
+  telemetry: false,
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,
