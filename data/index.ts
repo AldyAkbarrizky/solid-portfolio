@@ -76,7 +76,7 @@ export const projects = [
     des: "Simplify your video conferencing experience with Room. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://argo-room.vercel.app/",
+    link: "https://room.solidtechno.com/",
   },
   {
     id: 2,
@@ -84,7 +84,7 @@ export const projects = [
     des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://argo-ai.vercel.app/",
+    link: "https://ai.solidtechno.com/",
   },
   // {
   //   id: 3,
