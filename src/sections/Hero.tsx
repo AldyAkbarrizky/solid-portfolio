@@ -4,6 +4,7 @@ import { AnimateIn } from "@/components/ui/animate-in";
 import { GlowingButton } from "@/components/GlowingButton";
 import { useTranslations } from "next-intl";
 import { CheckCircle2, ShieldCheck, Users, Lightbulb, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -67,11 +68,15 @@ export default function Hero() {
 
             <AnimateIn from="bottom" delay={400}>
               <div className="flex flex-wrap gap-4">
-                <GlowingButton>{t("getStartedButton")}</GlowingButton>
-                <Button variant="outline" className="flex items-center gap-2">
-                  {t("viewWorkButton")}
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
+                <Link href="#projects">
+                  <GlowingButton>{t("getStartedButton")}</GlowingButton>
+                </Link>
+                <Link href="#team">
+                  <Button variant="outline" className="flex items-center gap-2">
+                    {t("viewWorkButton")}
+                    <ArrowRight className="h-4 w-4" />
+                  </Button>
+                </Link>
               </div>
             </AnimateIn>
 

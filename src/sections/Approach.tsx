@@ -13,52 +13,48 @@ import { useTranslations } from "next-intl";
 const approaches = [
   {
     id: 1,
-    title: "Discovery & Strategy",
-    description:
-      "We start with a deep dive into your business goals, user needs, and technical requirements to create a comprehensive roadmap.",
+    slug: "discovery",
     icon: <Lightbulb className="h-12 w-12 text-yellow-500 opacity-80" />,
     delay: 100,
   },
   {
     id: 2,
-    title: "Design & Architecture",
-    description:
-      "Our design process balances aesthetics with functionality, while our technical architecture ensures scalability and performance.",
+    slug: "design",
     icon: <Code2 className="h-12 w-12 text-purple-500 opacity-80" />,
     delay: 200,
   },
   {
     id: 3,
-    title: "Agile Development",
-    description:
-      "We employ agile methodologies with two-week sprints, continuous integration, and regular client updates to ensure transparency.",
+    slug: "agile",
     icon: <Rocket className="h-12 w-12 text-blue-500 opacity-80" />,
     delay: 300,
   },
   {
     id: 4,
-    title: "Testing & Quality Assurance",
-    description:
-      "Rigorous testing protocols, automated CI/CD pipelines, and comprehensive QA processes ensure reliable, bug-free software.",
+    slug: "testing",
     icon: <ShieldCheck className="h-12 w-12 text-green-500 opacity-80" />,
     delay: 400,
   },
   {
     id: 5,
-    title: "Launch & Optimization",
-    description:
-      "We ensure smooth deployments and provide post-launch monitoring, optimization, and support for continuous improvement.",
+    slug: "launch",
     icon: <BarChart className="h-12 w-12 text-red-500 opacity-80" />,
     delay: 500,
   },
   {
     id: 6,
-    title: "Continuous Innovation",
-    description:
-      "We stay at the forefront of technology trends, regularly suggesting improvements and new features to keep your product ahead of the curve.",
+    slug: "continuous",
     icon: <Zap className="h-12 w-12 text-orange-500 opacity-80" />,
     delay: 600,
   },
+];
+
+const featureKeys = [
+  "expertise",
+  "fullStack",
+  "userCentered",
+  "scalableArch",
+  "ongoingSupport",
 ];
 
 const Approach = () => {
@@ -84,10 +80,10 @@ const Approach = () => {
               >
                 <div className="flex justify-center mb-6">{approach.icon}</div>
                 <h3 className="text-xl font-bold mb-3 text-center">
-                  {approach.title}
+                  {t(`approaches.${approach.slug}.title`)}
                 </h3>
                 <p className="text-muted-foreground text-center">
-                  {approach.description}
+                  {t(`approaches.${approach.slug}.description`)}
                 </p>
               </BentoCard>
             </AnimateIn>
@@ -103,16 +99,10 @@ const Approach = () => {
                   {t("description2")}
                 </p>
                 <ul className="space-y-3">
-                  {[
-                    "Industry-specific expertise and domain knowledge",
-                    "Full-stack development capabilities across multiple technologies",
-                    "User-centered design philosophy focused on exceptional experiences",
-                    "Scalable architecture that grows with your business",
-                    "Ongoing support and continuous improvement",
-                  ].map((item, index) => (
+                  {featureKeys.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
                       <div className="min-w-4 min-h-4 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 mt-1.5" />
-                      <span>{item}</span>
+                      <span>{t(`keyfeatures.${item}`)}</span>
                     </li>
                   ))}
                 </ul>

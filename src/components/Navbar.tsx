@@ -5,6 +5,7 @@ import { ModeToggle } from "@/components/mode-toogle";
 import { Code2, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
+import Link from "next/link";
 // import Link from "next-intl";
 
 export default function Navbar() {
@@ -25,8 +26,8 @@ export default function Navbar() {
 
   const navItems = [
     { href: "#projects", label: t("projects") },
-    { href: "#clients", label: t("clients") },
-    { href: "#experience", label: t("experience") },
+    { href: "#team", label: t("team") },
+    { href: "#process", label: t("process") },
     { href: "#approach", label: t("approach") },
   ];
 
@@ -39,21 +40,21 @@ export default function Navbar() {
       }`}
     >
       <div className="container px-4 mx-auto flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2">
+        <Link href="#" className="flex items-center gap-2">
           <Code2 className="h-8 w-8 text-purple-500" />
           <span className="font-bold text-xl">{t("brandName")}</span>
-        </a>
+        </Link>
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <Button
             variant="default"
@@ -92,14 +93,14 @@ export default function Navbar() {
       >
         <nav className="flex flex-col items-center gap-6 p-8">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="text-xl font-medium hover:text-primary"
               onClick={toggleMenu}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <Button
             variant="default"

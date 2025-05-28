@@ -2,8 +2,8 @@
   "Navbar": {
     "brandName": "SolidTechno ID",
     "projects": "Proyek",
-    "clients": "Klien",
-    "experience": "Pengalaman",
+    "team": "Tim",
+    "process": "Proses",
     "approach": "Pendekatan",
     "contactUs": "Hubungi Kami"
   },
@@ -12,12 +12,28 @@
     "title": "Solusi Digital Inovatif untuk <highlight>Masa Depan Bisnis Anda</highlight>",
     "description": "Mengubah ide menjadi pengalaman digital luar biasa dengan teknologi terkini dan desain inovatif.",
     "getStartedButton": "Mulai Sekarang",
-    "viewWorkButton": "Lihat Proyek Kami",
+    "viewWorkButton": "Katakan Halo!",
     "trustedBy": "Dibangun di Atas Fondasi:",
     "reviews": "Komitmen Kami untuk Kesuksesan Anda"
   },
+  "Projects": {
+    "title": "Proyek Kami",
+    "description": "Solusi inovatif kami mencakup berbagai industri dan berusaha memberikan lebih dari yang terbaik untuk Anda.",
+    "projects": {
+      "room": {
+        "title": "Argo Room",
+        "description": "Platform yang sederhana dan andal untuk mengadakan pertemuan online, memungkinkan komunikasi lancar melalui fitur video, audio, dan berbagi layar."
+      },
+      "ai": {
+        "title": "Argo AI",
+        "description": "Alat pengedit gambar berbasis AI yang memudahkan Anda melakukan manipulasi terhadap gambar hanya dalam beberapa klik."
+      }
+    },
+    "view": "Lihat Proyek",
+    "viewall": "Lihat Semua Proyek"
+  },
   "ProcessTimeline": {
-    "title": "Proses Pengembangan Kami",
+    "title": "Proses Pengembangan",
     "description": "Pendekatan yang efisien untuk hasil yang maksimal",
     "discovery": {
       "title": "Analisis",
@@ -67,10 +83,43 @@
     }
   },
   "Approach": {
-    "title": "Pendekatan Pengembangan Kami",
+    "title": "Pendekatan Pengembangan",
     "description": "Metodologi yang terstruktur dengan fokus pada kualitas, efisiensi, dan hasil yang memuaskan.",
+    "approaches": {
+      "discovery": {
+        "title": "Penemuan & Strategi",
+        "description": "Kami memulai dengan memahami secara mendalam tujuan bisnis, kebutuhan pengguna, dan persyaratan teknis untuk menyusun peta jalan yang menyeluruh."
+      },
+      "design": {
+        "title": "Desain & Arsitektur",
+        "description": "Proses desain kami mengutamakan keseimbangan antara estetika dan fungsionalitas, sementara arsitektur teknis memastikan skalabilitas dan performa optimal."
+      },
+      "agile": {
+        "title": "Pengembangan Agile",
+        "description": "Kami menerapkan metodologi agile dengan sprint dua mingguan, integrasi berkelanjutan, dan pembaruan rutin untuk menjaga transparansi."
+      },
+      "testing": {
+        "title": "Pengujian & Jaminan Kualitas",
+        "description": "Protokol pengujian yang ketat, pipeline CI/CD otomatis, dan proses QA yang menyeluruh memastikan perangkat lunak yang andal dan bebas dari bug."
+      },
+      "launch": {
+        "title": "Peluncuran & Optimasi",
+        "description": "Kami memastikan proses peluncuran berjalan lancar serta menyediakan pemantauan pasca peluncuran, optimasi, dan dukungan untuk peningkatan berkelanjutan."
+      },
+      "continuous": {
+        "title": "Inovasi Berkelanjutan",
+        "description": "Kami selalu mengikuti tren teknologi terkini dan secara rutin memberikan saran peningkatan serta fitur baru agar produk tetap unggul di pasar."
+      }
+    },
     "title2": "Keunggulan Kami",
-    "description2": "Kami berbeda karena punya kombinasi unik antara keahlian teknis, cara berpikir kreatif, dan komitmen penuh terhadap kesuksesan anda. Kami nggak sekadar bikin software — kami merancang solusi yang bantu bisnismu terus maju."
+    "description2": "Kami berbeda karena punya kombinasi unik antara keahlian teknis, cara berpikir kreatif, dan komitmen penuh terhadap kesuksesan Anda. Kami tidak hanya sekadar mengembangkan aplikasi — kami merancang solusi digital yang dapat membantu bisnis anda terus maju.",
+    "keyfeatures": {
+      "expertise": "Keahlian di bidang industri dan pemahaman mendalam terhadap bidang terkait",
+      "fullStack": "Kemampuan pengembangan full-stack di berbagai teknologi",
+      "userCentered": "Filosofi desain yang berorientasi pada pengguna untuk pengalaman luar biasa",
+      "scalableArch": "Arsitektur yang dapat diskalakan dan tumbuh bersama bisnis Anda",
+      "ongoingSupport": "Dukungan berkelanjutan dan peningkatan terus-menerus"
+    }
   },
   "Footer": {
     "title": "SolidTechno ID",

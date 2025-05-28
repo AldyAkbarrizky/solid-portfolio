@@ -72,7 +72,10 @@ const ProcessTimeline = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section
+      id="process"
+      className="py-20 bg-background relative overflow-hidden"
+    >
       <div className="container px-4 mx-auto">
         <AnimateIn from="bottom">
           <div className="max-w-2xl mx-auto text-center mb-16">

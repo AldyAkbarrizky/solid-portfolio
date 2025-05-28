@@ -2,8 +2,8 @@
   "Navbar": {
     "brandName": "SolidTechno ID",
     "projects": "Projects",
-    "clients": "Clients",
-    "experience": "Experience",
+    "team": "Team",
+    "process": "Process",
     "approach": "Approach",
     "contactUs": "Contact Us"
   },
@@ -12,9 +12,25 @@
     "title": "We Build <highlight>Future-Ready</highlight> Software Solutions",
     "description": "Transforming ideas into exceptional digital experiences with cutting-edge technology and innovative design.",
     "getStartedButton": "Get Started",
-    "viewWorkButton": "View Our Work",
+    "viewWorkButton": "Say Hello!",
     "trustedBy": "Built on a Foundation of:",
     "reviews": "Our Commitment to Your Success"
+  },
+  "Projects": {
+    "title": "Our Projects",
+    "description": "Our innovative solutions span various industries and strive to deliver more than just the best for you.",
+    "projects": {
+      "room": {
+        "title": "Argo Room",
+        "description": "A simple and reliable platform for hosting online meetings, enabling seamless communication through video, audio, and screen sharing features."
+      },
+      "ai": {
+        "title": "Argo AI",
+        "description": "An AI-driven image editing tool that lets you easily remove backgrounds, enhance quality, and apply smart adjustments with just a few clicks."
+      }
+    },
+    "view": "View Project",
+    "viewall": "View All Projects"
   },
   "ProcessTimeline": {
     "title": "Our Development Process",
@@ -69,8 +85,41 @@
   "Approach": {
     "title": "Our Development Approach",
     "description": "A systematic methodology focused on quality, efficiency, and  delivering exceptional results.",
+    "approaches": {
+      "discovery": {
+        "title": "Discovery & Strategy",
+        "description": "We start with a deep dive into your business goals, user needs, and technical requirements to create a comprehensive roadmap."
+      },
+      "design": {
+        "title": "Design & Architecture",
+        "description": "Our design process balances aesthetics with functionality, while our technical architecture ensures scalability and performance."
+      },
+      "agile": {
+        "title": "Agile Development",
+        "description": "We employ agile methodologies with two-week sprints, continuous integration, and regular client updates to ensure transparency."
+      },
+      "testing": {
+        "title": "Testing & Quality Assurance",
+        "description": "Rigorous testing protocols, automated CI/CD pipelines, and comprehensive QA processes ensure reliable, bug-free software."
+      },
+      "launch": {
+        "title": "Launch & Optimization",
+        "description": "We ensure smooth deployments and provide post-launch monitoring, optimization, and support for continuous improvement."
+      },
+      "continuous": {
+        "title": "Continuous Innovation",
+        "description": "We stay at the forefront of technology trends, regularly suggesting improvements and new features to keep your product ahead of the curve."
+      }
+    },
     "title2": "Our Unique Advantage",
-    "description2": "What sets us apart is our unique blend of technical expertise, creative problem-solving, and unwavering commitment to your success. We don't just build software—we craft solutions that drive your business forward."
+    "description2": "What sets us apart is our unique blend of technical expertise, creative problem-solving, and unwavering commitment to your success. We don't just build software—we craft solutions that drive your business forward.",
+    "keyfeatures": {
+      "expertise": "Industry-specific expertise and domain knowledge",
+      "fullStack": "Full-stack development capabilities across multiple technologies",
+      "userCentered": "User-centered design philosophy focused on exceptional experiences",
+      "scalableArch": "Scalable architecture that grows with your business",
+      "ongoingSupport": "Ongoing support and continuous improvement"
+    }
   },
   "Footer": {
     "title": "SolidTechno ID",

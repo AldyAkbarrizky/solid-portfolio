@@ -3,6 +3,7 @@ import Approach from "@/sections/Approach";
 import Footer from "@/sections/Footer";
 import Hero from "@/sections/Hero";
 import ProcessTimeline from "@/sections/ProcessTimeline";
+import Projects from "@/sections/Projects";
 import Team from "@/sections/Team";
 
 export default function LocaleHomePage() {
@@ -11,6 +12,7 @@ export default function LocaleHomePage() {
       <Navbar />
       <main>
         <Hero />
+        <Projects />
         <ProcessTimeline />
         <Team />
         <Approach />

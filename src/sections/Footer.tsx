@@ -26,36 +26,36 @@ const Footer = () => {
               </Link>
               <p className="text-muted-foreground mb-4">{t("description")}</p>
               <div className="flex items-center gap-3">
-                <a
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
                   <SiX className="h-5 w-5" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
                   <Linkedin className="h-5 w-5" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
                   <SiInstagram className="h-5 w-5" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
                   <SiGithub className="h-5 w-5" />
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
                   <SiFacebook className="h-5 w-5" />
-                </a>
+                </Link>
               </div>
             </div>
           </AnimateIn>
@@ -64,52 +64,52 @@ const Footer = () => {
               <h3 className="font-bold text-lg mb-4">{t("quicklink")}</h3>
               <ul className="space-y-3">
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("home")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#projects"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("projects")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#clients"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("clients")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#experience"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("experience")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#approach"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("approach")}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t("contact")}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -158,24 +158,24 @@ const Footer = () => {
             © {currentYear} SolidTechno ID. {t("allrightsreserved")}
           </p>
           <div className="flex items-center gap-4 text-sm">
-            <a
+            <Link
               href="#"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               {t("privacypolicy")}
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               {t("termsofservice")}
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               {t("cookiepolicy")}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
