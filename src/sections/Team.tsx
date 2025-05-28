@@ -1,7 +1,7 @@
-import Bozz from "@/assets/images/Afdal Square.jpg";
-import Dyxon from "@/assets/images/Aldy Square.jpg";
-import Jekzz from "@/assets/images/Jek Square.jpg";
-import Habibz from "@/assets/images/Naufal Anak Baik.jpg";
+import Bozz from "@/assets/images/Afdal Square.webp";
+import Dyxon from "@/assets/images/Aldy Square.webp";
+import Jekzz from "@/assets/images/Jek Square.webp";
+import Habibz from "@/assets/images/Naufal Anak Baik.webp";
 import { AnimateIn } from "@/components/ui/animate-in";
 import BentoCard from "@/components/BentoCard";
 import Image from "next/image";
