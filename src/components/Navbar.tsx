@@ -1,0 +1,117 @@
+"use client";
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { ModeToggle } from "@/components/mode-toogle";
+import { Code2, Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./language-switcher";
+// import Link from "next-intl";
+
+export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("Navbar");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const navItems = [
+    { href: "#projects", label: t("projects") },
+    { href: "#clients", label: t("clients") },
+    { href: "#experience", label: t("experience") },
+    { href: "#approach", label: t("approach") },
+  ];
+
+  return (
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-background/80 backdrop-blur-md shadow-md py-3"
+          : "bg-transparent py-5"
+      }`}
+    >
+      <div className="container px-4 mx-auto flex items-center justify-between">
+        <a href="#" className="flex items-center gap-2">
+          <Code2 className="h-8 w-8 text-purple-500" />
+          <span className="font-bold text-xl">{t("brandName")}</span>
+        </a>
+
+        {/* Desktop navigation */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {item.label}
+            </a>
+          ))}
+          <Button
+            variant="default"
+            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+          >
+            {t("contactUs")}
+          </Button>
+          <ModeToggle />
+          <LanguageSwitcher />
+        </nav>
+
+        {/* Mobile menu button */}
+        <div className="flex items-center md:hidden gap-4">
+          <ModeToggle />
+          <LanguageSwitcher />
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggleMenu}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </Button>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden fixed inset-0 bg-background z-40 transition-transform duration-300 pt-20 ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <nav className="flex flex-col items-center gap-6 p-8">
+          {navItems.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="text-xl font-medium hover:text-primary"
+              onClick={toggleMenu}
+            >
+              {item.label}
+            </a>
+          ))}
+          <Button
+            variant="default"
+            className="w-full mt-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            onClick={() => {
+              toggleMenu();
+            }}
+          >
+            {t("contactUs")}
+          </Button>
+        </nav>
+      </div>
+    </header>
+  );
+}

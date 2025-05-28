@@ -1,0 +1,92 @@
+{
+  "Navbar": {
+    "brandName": "SolidTechno ID",
+    "projects": "Proyek",
+    "clients": "Klien",
+    "experience": "Pengalaman",
+    "approach": "Pendekatan",
+    "contactUs": "Hubungi Kami"
+  },
+  "Hero": {
+    "badge": "Solusi Digital Masa Kini",
+    "title": "Solusi Digital Inovatif untuk <highlight>Masa Depan Bisnis Anda</highlight>",
+    "description": "Mengubah ide menjadi pengalaman digital luar biasa dengan teknologi terkini dan desain inovatif.",
+    "getStartedButton": "Mulai Sekarang",
+    "viewWorkButton": "Lihat Proyek Kami",
+    "trustedBy": "Dibangun di Atas Fondasi:",
+    "reviews": "Komitmen Kami untuk Kesuksesan Anda"
+  },
+  "ProcessTimeline": {
+    "title": "Proses Pengembangan Kami",
+    "description": "Pendekatan yang efisien untuk hasil yang maksimal",
+    "discovery": {
+      "title": "Analisis",
+      "description": "Memahami visi dan kebutuhan anda"
+    },
+    "development": {
+      "title": "Pengembangan",
+      "description": "Mengembangkan ide yang anda miliki dengan kode yang rapi"
+    },
+    "testing": {
+      "title": "Pengujian",
+      "description": "Menjamin dan memastikan kualitas serta performa"
+    },
+    "deployment": {
+      "title": "Peluncuran",
+      "description": "Membawa solusi digital anda ke dunia"
+    },
+    "optimization": {
+      "title": "Optimasi",
+      "description": "Pemeliharan dan Peningkatan secara terus-menerus"
+    }
+  },
+  "Team": {
+    "title": "Salam Kenal dari Kami",
+    "description": "Pakar berpengalaman yang siap bantu bikin solusi digital terbaik."
+  },
+  "TeamMembers": {
+    "afdal": {
+      "name": "Afdal Ramdan Daman Huri",
+      "role": "UI/UX Designer",
+      "bio": "gas fresh dari gemini wkwk"
+    },
+    "aldy": {
+      "name": "Aldy Akbarrizky",
+      "role": "Full Stack Developer",
+      "bio": "Ikuti adik kecilmu ketika gacha"
+    },
+    "andrian": {
+      "name": "Andrian Maulana Yusuf",
+      "role": "Front End Developer",
+      "bio": "Jadilah dirimu dan jangan menyerah"
+    },
+    "naufal": {
+      "name": "Naufal Habib Hakim",
+      "role": "Front End Developer",
+      "bio": "Satu-satunya batasan untuk realisasi kita akan hari esok adalah keraguan kita hari ini."
+    }
+  },
+  "Approach": {
+    "title": "Pendekatan Pengembangan Kami",
+    "description": "Metodologi yang terstruktur dengan fokus pada kualitas, efisiensi, dan hasil yang memuaskan.",
+    "title2": "Keunggulan Kami",
+    "description2": "Kami berbeda karena punya kombinasi unik antara keahlian teknis, cara berpikir kreatif, dan komitmen penuh terhadap kesuksesan anda. Kami nggak sekadar bikin software — kami merancang solusi yang bantu bisnismu terus maju."
+  },
+  "Footer": {
+    "title": "SolidTechno ID",
+    "description": "Mengubah ide menjadi pengalaman digital luar biasa dengan teknologi terkini dan desain inovatif.",
+    "quicklink": "Tautan",
+    "home": "Beranda",
+    "projects": "Proyek",
+    "clients": "Klien",
+    "experience": "Pengalaman",
+    "approach": "Pendekatan",
+    "contact": "Kontak",
+    "subscribe": "Langganan",
+    "subscribedesc": "Dapatkan info terbaru dan update dari kami langsung ke email anda.",
+    "allrightsreserved": "Semua hak cipta dilindungi.",
+    "privacypolicy": "Kebijakan Privasi",
+    "termsofservice": "Syarat dan Ketentuan Layanan",
+    "cookiepolicy": "Kebijakan Cookie"
+  }
+}

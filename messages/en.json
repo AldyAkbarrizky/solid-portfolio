@@ -1,0 +1,92 @@
+{
+  "Navbar": {
+    "brandName": "SolidTechno ID",
+    "projects": "Projects",
+    "clients": "Clients",
+    "experience": "Experience",
+    "approach": "Approach",
+    "contactUs": "Contact Us"
+  },
+  "Hero": {
+    "badge": "Next-Gen Software Solutions",
+    "title": "We Build <highlight>Future-Ready</highlight> Software Solutions",
+    "description": "Transforming ideas into exceptional digital experiences with cutting-edge technology and innovative design.",
+    "getStartedButton": "Get Started",
+    "viewWorkButton": "View Our Work",
+    "trustedBy": "Built on a Foundation of:",
+    "reviews": "Our Commitment to Your Success"
+  },
+  "ProcessTimeline": {
+    "title": "Our Development Process",
+    "description": "A streamlined approach to delivering exceptional results",
+    "discovery": {
+      "title": "Discovery",
+      "description": "Understanding your vision and requirements"
+    },
+    "development": {
+      "title": "Development",
+      "description": "Bringing ideas to life with clean code"
+    },
+    "testing": {
+      "title": "Testing",
+      "description": "Ensuring quality and performance"
+    },
+    "deployment": {
+      "title": "Deployment",
+      "description": "Launching your solution to the world"
+    },
+    "optimization": {
+      "title": "Optimization",
+      "description": "Continuous improvement and updates"
+    }
+  },
+  "Team": {
+    "title": "Meet Our Team",
+    "description": "Passionate experts dedicated to crafting exceptional software solutions"
+  },
+  "TeamMembers": {
+    "afdal": {
+      "name": "Afdal Ramdan Daman Huri",
+      "role": "UI/UX Designer",
+      "bio": "Don't count the days, make the days count."
+    },
+    "aldy": {
+      "name": "Aldy Akbarrizky",
+      "role": "Full Stack Developer",
+      "bio": "Follow your little brother when gacha-ing"
+    },
+    "andrian": {
+      "name": "Andrian Maulana Yusuf",
+      "role": "Front End Developer",
+      "bio": "Be yourself and never surrender"
+    },
+    "naufal": {
+      "name": "Naufal Habib Hakim",
+      "role": "Front End Developer",
+      "bio": "The only limit to our realization of tomorrow will be our doubts of today."
+    }
+  },
+  "Approach": {
+    "title": "Our Development Approach",
+    "description": "A systematic methodology focused on quality, efficiency, and  delivering exceptional results.",
+    "title2": "Our Unique Advantage",
+    "description2": "What sets us apart is our unique blend of technical expertise, creative problem-solving, and unwavering commitment to your success. We don't just build software—we craft solutions that drive your business forward."
+  },
+  "Footer": {
+    "title": "SolidTechno ID",
+    "description": "Transforming ideas into exceptional digital experiences with cutting-edge technology and innovative design.",
+    "quicklink": "Quick Links",
+    "home": "Home",
+    "projects": "Projects",
+    "clients": "Clients",
+    "experience": "Experience",
+    "approach": "Approach",
+    "contact": "Contact",
+    "subscribe": "Subscribe",
+    "subscribedesc": "Stay up to date with our latest news and updates.",
+    "allrightsreserved": "All rights reserved.",
+    "privacypolicy": "Privacy Policy",
+    "termsofservice": "Terms of Service",
+    "cookiepolicy": "Cookie Policy"
+  }
+}
