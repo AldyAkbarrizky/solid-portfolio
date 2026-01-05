@@ -1,15 +1,18 @@
 import { AnimateIn } from "@/components/ui/animate-in";
 import { Code2, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   SiX,
   SiInstagram,
   SiGithub,
   SiFacebook,
+  SiTiktok
 } from "@icons-pack/react-simple-icons";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useTranslations } from "next-intl";
+import SolidSVG from "@/assets/images/Solid SVG.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,13 +23,13 @@ const Footer = () => {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <AnimateIn from="bottom" delay={100}>
             <div>
-              <Link href="#" className="flex items-center gap-2 mb-4">
-                <Code2 className="h-8 w-8 text-purple-500" />
+              <Link href="#" className="flex items-center gap-3 mb-4">
+                <Image src={SolidSVG} alt="Solid Logo" width={28} height={28} />
                 <span className="font-bold text-xl">{t("title")}</span>
               </Link>
               <p className="text-muted-foreground mb-4">{t("description")}</p>
-              <div className="flex items-center gap-3">
-                <Link
+              <div className="flex items-center gap-4">
+                {/* <Link
                   href="#"
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
@@ -37,14 +40,20 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
                   <Linkedin className="h-5 w-5" />
-                </Link>
+                </Link> */}
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/solidtechno.id/"
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
                   <SiInstagram className="h-5 w-5" />
                 </Link>
                 <Link
+                  href="https://www.tiktok.com/@solidtechno"
+                  className="text-muted-foreground hover:text-purple-500 transition-colors"
+                >
+                  <SiTiktok className="h-5 w-5" />
+                </Link>
+                {/* <Link
                   href="#"
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
@@ -55,7 +64,7 @@ const Footer = () => {
                   className="text-muted-foreground hover:text-purple-500 transition-colors"
                 >
                   <SiFacebook className="h-5 w-5" />
-                </Link>
+                </Link> */}
               </div>
             </div>
           </AnimateIn>
@@ -120,20 +129,20 @@ const Footer = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-purple-500 mt-0.5" />
-                  <span className="text-muted-foreground">
+                  <span className="text-muted-foreground w-full">
                     Jl. Kebon Kopi, blok Citopeng No 312 RT 06 RW 22, Kota
                     Cimahi
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-purple-500" />
-                  <span className="text-muted-foreground">
+                  <span className="text-muted-foreground w-full">
                     +62 877-7872-1893
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-purple-500" />
-                  <span className="text-muted-foreground">
+                  <span className="text-muted-foreground w-full truncate">
                     ptsolidsejatheraselamanya@gmail.com
                   </span>
                 </li>
@@ -155,7 +164,7 @@ const Footer = () => {
         </div>
         <div className="py-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} SolidTechno ID. {t("allrightsreserved")}
+            © {currentYear} Solid Techno ID. {t("allrightsreserved")}
           </p>
           <div className="flex items-center gap-4 text-sm">
             <Link

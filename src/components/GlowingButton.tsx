@@ -8,7 +8,7 @@ interface GlowingButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function GlowingButton({
   className,
-  glowColor = "rgba(124, 58, 237, 0.5)",
+  glowColor = "rgba(255, 255, 255, 0.5)",
   children,
   ...props
 }: GlowingButtonProps) {

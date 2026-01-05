@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "brandName": "SolidTechno ID",
+    "brandName": "Solid Techno ID",
     "projects": "Projects",
     "team": "Team",
     "process": "Process",
@@ -27,6 +27,10 @@
       "ai": {
         "title": "Argo AI",
         "description": "An AI-driven image editing tool that lets you easily remove backgrounds, enhance quality, and apply smart adjustments with just a few clicks."
+      },
+      "cv": {
+        "title": "Argo CV",
+        "description": "An AI-powered applicant tracking system that streamlines the recruitment process by automating resume screening and interview scheduling."
       }
     },
     "view": "View Project",
@@ -122,7 +126,7 @@
     }
   },
   "Footer": {
-    "title": "SolidTechno ID",
+    "title": "Solid Techno ID",
     "description": "Transforming ideas into exceptional digital experiences with cutting-edge technology and innovative design.",
     "quicklink": "Quick Links",
     "home": "Home",

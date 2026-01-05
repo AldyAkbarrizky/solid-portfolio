@@ -72,7 +72,7 @@ export default function Hero() {
                   <GlowingButton>{t("getStartedButton")}</GlowingButton>
                 </Link>
                 <Link href="#team">
-                  <Button variant="outline" className="flex items-center gap-2">
+                  <Button variant="outline" className="flex items-center gap-2 text-md py-6" size="lg">
                     {t("viewWorkButton")}
                     <ArrowRight className="h-4 w-4" />
                   </Button>

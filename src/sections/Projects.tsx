@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
 import Room from "@/assets/images/Argo Room.webp";
 import AI from "@/assets/images/Argo AI.webp";
+import CV from "@/assets/images/CV-Solid.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,9 +29,17 @@ const projects = [
     link: "https://ai.solidtechno.com",
     large: false,
   },
+  {
+    id: 3,
+    label: "cv",
+    image: CV,
+    tags: ["React", "Node.js", "NextJS", "Review"],
+    link: "https://cv-review.solidtechno.com",
+    large: false,
+  },
 ];
 
-const categories = ["All", "AI", "Meeting"];
+const categories = ["All", "AI", "Meeting", "Review"];
 
 const Projects = () => {
   const t = useTranslations("Projects");
@@ -63,7 +72,7 @@ const Projects = () => {
               <Button
                 key={category}
                 variant={activeCategory === category ? "default" : "outline"}
-                size="sm"
+                size="lg"
                 onClick={() => setActiveCategory(category)}
                 className={
                   activeCategory === category

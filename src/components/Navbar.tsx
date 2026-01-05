@@ -6,6 +6,8 @@ import { Code2, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
 import Link from "next/link";
+import Image from "next/image";
+import SolidSVG from "@/assets/images/Solid SVG.svg";
 // import Link from "next-intl";
 
 export default function Navbar() {
@@ -40,8 +42,8 @@ export default function Navbar() {
       }`}
     >
       <div className="container px-4 mx-auto flex items-center justify-between">
-        <Link href="#" className="flex items-center gap-2">
-          <Code2 className="h-8 w-8 text-purple-500" />
+        <Link href="#" className="flex items-center gap-3">
+          <Image src={SolidSVG} alt="Solid Logo" width={28} height={28} />
           <span className="font-bold text-xl">{t("brandName")}</span>
         </Link>
 
@@ -58,6 +60,7 @@ export default function Navbar() {
           ))}
           <Button
             variant="default"
+            size="sm"
             className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
           >
             {t("contactUs")}

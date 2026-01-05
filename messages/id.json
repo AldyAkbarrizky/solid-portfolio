@@ -1,6 +1,6 @@
 {
   "Navbar": {
-    "brandName": "SolidTechno ID",
+    "brandName": "Solid Techno ID",
     "projects": "Proyek",
     "team": "Tim",
     "process": "Proses",
@@ -27,6 +27,10 @@
       "ai": {
         "title": "Argo AI",
         "description": "Alat pengedit gambar berbasis AI yang memudahkan Anda melakukan manipulasi terhadap gambar hanya dalam beberapa klik."
+      },
+      "cv": {
+        "title": "Argo CV",
+        "description": "Sistem pelacakan pelamar berbasis AI yang menyederhanakan proses perekrutan dengan otomatisasi penyaringan resume dan penjadwalan wawancara."
       }
     },
     "view": "Lihat Proyek",
@@ -122,7 +126,7 @@
     }
   },
   "Footer": {
-    "title": "SolidTechno ID",
+    "title": "Solid Techno ID",
     "description": "Mengubah ide menjadi pengalaman digital luar biasa dengan teknologi terkini dan desain inovatif.",
     "quicklink": "Tautan",
     "home": "Beranda",

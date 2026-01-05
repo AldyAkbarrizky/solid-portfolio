@@ -91,7 +91,7 @@ const ProcessTimeline = () => {
             <div
               key={step.id}
               data-step={index}
-              className="relative flex items-start mb-12 last:mb-0"
+              className="relative flex items-start last:mb-0"
             >
               <div className="flex flex-col items-center mr-6">
                 <div
