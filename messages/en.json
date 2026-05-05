@@ -23,9 +23,9 @@
     "description": "A small selection of products and experiments our team has built while sharpening our craft.",
     "categories": {
       "all": "All",
-      "ai": "AI",
-      "meeting": "Meeting",
-      "review": "Review"
+      "ai": "AI & Automation",
+      "business": "Business Tools",
+      "consumer": "Consumer Web"
     },
     "projects": {
       "room": {
@@ -39,6 +39,10 @@
       "cv": {
         "title": "Argo CV",
         "description": "An AI-powered applicant tracking system that streamlines the recruitment process by automating resume screening and interview scheduling."
+      },
+      "girby": {
+        "title": "Girby Clothes",
+        "description": "An e-commerce website for an Indonesian local children's clothing brand, designed to present collections clearly and make product browsing simple for parents."
       }
     },
     "view": "View Project",

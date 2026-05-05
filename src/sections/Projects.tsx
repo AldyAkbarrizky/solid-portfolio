@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import Room from "@/assets/images/Argo Room.webp";
 import AI from "@/assets/images/Argo AI.webp";
 import CV from "@/assets/images/CV-Solid.png";
+import Girby from "@/assets/images/Girby Clothes.webp";
 
 const projects = [
   {
@@ -11,7 +12,7 @@ const projects = [
     label: "room",
     image: Room,
     tags: ["React", "Node.js", "NextJS", "Meeting"],
-    categories: ["meeting"],
+    categories: ["business"],
     link: "https://room.solidtechno.com",
   },
   {
@@ -19,7 +20,7 @@ const projects = [
     label: "ai",
     image: AI,
     tags: ["React", "Node.js", "NextJS", "AI"],
-    categories: ["ai"],
+    categories: ["ai", "consumer"],
     link: "https://ai.solidtechno.com",
   },
   {
@@ -27,8 +28,16 @@ const projects = [
     label: "cv",
     image: CV,
     tags: ["React", "Node.js", "NextJS", "Review"],
-    categories: ["review"],
+    categories: ["ai", "business"],
     link: "https://cv-review.solidtechno.com",
+  },
+  {
+    id: 4,
+    label: "girby",
+    image: Girby,
+    tags: ["NextJS", "Node.js", "E-Commerce"],
+    categories: ["consumer"],
+    link: "https://girby-dev.solidtechno.com",
   },
 ];
 
@@ -37,8 +46,8 @@ const Projects = () => {
   const categories = [
     { id: "all", label: t("categories.all") },
     { id: "ai", label: t("categories.ai") },
-    { id: "meeting", label: t("categories.meeting") },
-    { id: "review", label: t("categories.review") },
+    { id: "business", label: t("categories.business") },
+    { id: "consumer", label: t("categories.consumer") },
   ];
 
   return (
