@@ -7,7 +7,7 @@ import {
 } from "next-themes";
 import type { ThemeProviderProps as NextThemesProviderPrimitiveProps } from "next-themes";
 
-export interface ThemeProviderProps extends NextThemesProviderPrimitiveProps {}
+export type ThemeProviderProps = NextThemesProviderPrimitiveProps;
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (

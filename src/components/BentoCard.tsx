@@ -20,7 +20,7 @@ interface BentoCardProps {
   hover?: boolean;
 }
 
-export default function BentooCard({
+export default function BentoCard({
   title,
   description,
   footer,
@@ -33,10 +33,10 @@ export default function BentooCard({
   return (
     <Card
       className={cn(
-        "overflow-hidden transition-all duration-200",
-        hover && "hover:shadow-lg hover:-translate-y-1",
+        "overflow-hidden border-border/80 bg-card shadow-sm transition-all duration-200",
+        hover && "hover:shadow-md hover:-translate-y-1",
         gradient &&
-          "border-0 bg-gradient-to-br from-purple-900/20 to-blue-900/20 backdrop-blur-sm",
+          "bg-gradient-to-br from-card via-card to-accent/60 dark:border-0 dark:from-purple-900/20 dark:to-blue-900/20",
         className
       )}
     >

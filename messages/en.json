@@ -8,17 +8,25 @@
     "contactUs": "Contact Us"
   },
   "Hero": {
-    "badge": "Next-Gen Software Solutions",
-    "title": "We Build <highlight>Future-Ready</highlight> Software Solutions",
-    "description": "Transforming ideas into exceptional digital experiences with cutting-edge technology and innovative design.",
-    "getStartedButton": "Get Started",
-    "viewWorkButton": "Say Hello!",
-    "trustedBy": "Built on a Foundation of:",
-    "reviews": "Our Commitment to Your Success"
+    "badge": "Product Design & Software Development",
+    "title": "We Build <highlight>Practical</highlight> Digital Products",
+    "description": "We design and develop focused web products with clear scope, maintainable code, and usable interfaces.",
+    "getStartedButton": "View Projects",
+    "viewWorkButton": "Contact Us",
+    "productReady": "product-ready interface",
+    "maintainable": "maintainable",
+    "trustedBy": "Built around:",
+    "reviews": "clear delivery"
   },
   "Projects": {
     "title": "Our Projects",
-    "description": "Our innovative solutions span various industries and strive to deliver more than just the best for you.",
+    "description": "A small selection of products and experiments our team has built while sharpening our craft.",
+    "categories": {
+      "all": "All",
+      "ai": "AI",
+      "meeting": "Meeting",
+      "review": "Review"
+    },
     "projects": {
       "room": {
         "title": "Argo Room",
@@ -38,108 +46,105 @@
   },
   "ProcessTimeline": {
     "title": "Our Development Process",
-    "description": "A streamlined approach to delivering exceptional results",
+    "description": "A practical flow for building maintainable products",
     "discovery": {
       "title": "Discovery",
-      "description": "Understanding your vision and requirements"
+      "description": "Clarifying goals, scope, users, and constraints"
     },
     "development": {
       "title": "Development",
-      "description": "Bringing ideas to life with clean code"
+      "description": "Turning agreed ideas into working product features"
     },
     "testing": {
       "title": "Testing",
-      "description": "Ensuring quality and performance"
+      "description": "Checking usability, quality, and core performance"
     },
     "deployment": {
       "title": "Deployment",
-      "description": "Launching your solution to the world"
+      "description": "Preparing release, hosting, and basic monitoring"
     },
     "optimization": {
       "title": "Optimization",
-      "description": "Continuous improvement and updates"
+      "description": "Improving based on usage, findings, and priorities"
     }
   },
   "Team": {
     "title": "Meet Our Team",
-    "description": "Passionate experts dedicated to crafting exceptional software solutions"
+    "description": "A small team focused on product design and software engineering"
   },
   "TeamMembers": {
     "afdal": {
       "name": "Afdal Ramdan Daman Huri",
       "role": "UI/UX Designer",
-      "bio": "Don't count the days, make the days count."
+      "bio": "Design clear flows that make every screen easier to understand."
     },
     "aldy": {
       "name": "Aldy Akbarrizky",
       "role": "Full Stack Developer",
-      "bio": "Follow your little brother when gacha-ing"
+      "bio": "Build reliable systems that stay simple to maintain and extend."
     },
     "andrian": {
       "name": "Andrian Maulana Yusuf",
       "role": "Front End Developer",
-      "bio": "Be yourself and never surrender"
+      "bio": "Keep interfaces fast, consistent, accessible, and easy to use."
     },
     "naufal": {
       "name": "Naufal Habib Hakim",
       "role": "Front End Developer",
-      "bio": "The only limit to our realization of tomorrow will be our doubts of today."
+      "bio": "Ship focused improvements with careful attention to every detail."
     }
   },
   "Approach": {
     "title": "Our Development Approach",
-    "description": "A systematic methodology focused on quality, efficiency, and  delivering exceptional results.",
+    "description": "A simple working method focused on clarity, delivery, and maintainability.",
     "approaches": {
       "discovery": {
         "title": "Discovery & Strategy",
-        "description": "We start with a deep dive into your business goals, user needs, and technical requirements to create a comprehensive roadmap."
+        "description": "We start by clarifying goals, users, scope, and technical constraints before deciding what to build."
       },
       "design": {
         "title": "Design & Architecture",
-        "description": "Our design process balances aesthetics with functionality, while our technical architecture ensures scalability and performance."
+        "description": "We shape interfaces and technical structure together so the product stays usable and maintainable."
       },
       "agile": {
-        "title": "Agile Development",
-        "description": "We employ agile methodologies with two-week sprints, continuous integration, and regular client updates to ensure transparency."
+        "title": "Iterative Development",
+        "description": "We break work into small batches, share progress clearly, and adjust priorities when the product needs it."
       },
       "testing": {
         "title": "Testing & Quality Assurance",
-        "description": "Rigorous testing protocols, automated CI/CD pipelines, and comprehensive QA processes ensure reliable, bug-free software."
+        "description": "We check core flows, edge cases, responsiveness, and performance before handing work over."
       },
       "launch": {
         "title": "Launch & Optimization",
-        "description": "We ensure smooth deployments and provide post-launch monitoring, optimization, and support for continuous improvement."
+        "description": "We prepare deployment carefully and keep room for improvements after real usage begins."
       },
       "continuous": {
-        "title": "Continuous Innovation",
-        "description": "We stay at the forefront of technology trends, regularly suggesting improvements and new features to keep your product ahead of the curve."
+        "title": "Continuous Improvement",
+        "description": "We prefer steady, useful improvements over adding features that do not solve a real need."
       }
     },
-    "title2": "Our Unique Advantage",
-    "description2": "What sets us apart is our unique blend of technical expertise, creative problem-solving, and unwavering commitment to your success. We don't just build software—we craft solutions that drive your business forward.",
+    "title2": "How We Work",
+    "description2": "We are still growing, so our focus is straightforward: understand the problem, build carefully, communicate clearly, and keep the product easy to improve.",
     "keyfeatures": {
-      "expertise": "Industry-specific expertise and domain knowledge",
-      "fullStack": "Full-stack development capabilities across multiple technologies",
-      "userCentered": "User-centered design philosophy focused on exceptional experiences",
-      "scalableArch": "Scalable architecture that grows with your business",
-      "ongoingSupport": "Ongoing support and continuous improvement"
+      "expertise": "Clear requirements before implementation starts",
+      "fullStack": "Full-stack implementation for focused product needs",
+      "userCentered": "User-focused interface decisions",
+      "scalableArch": "Maintainable architecture that can evolve",
+      "ongoingSupport": "Transparent handoff and practical iteration"
     }
   },
   "Footer": {
     "title": "Solid Techno ID",
-    "description": "Transforming ideas into exceptional digital experiences with cutting-edge technology and innovative design.",
+    "description": "A small software team building practical web products and digital tools.",
     "quicklink": "Quick Links",
     "home": "Home",
     "projects": "Projects",
-    "clients": "Clients",
-    "experience": "Experience",
+    "team": "Team",
+    "process": "Process",
     "approach": "Approach",
     "contact": "Contact",
-    "subscribe": "Subscribe",
-    "subscribedesc": "Stay up to date with our latest news and updates.",
-    "allrightsreserved": "All rights reserved.",
-    "privacypolicy": "Privacy Policy",
-    "termsofservice": "Terms of Service",
-    "cookiepolicy": "Cookie Policy"
+    "subscribe": "Start a Project",
+    "subscribedesc": "Tell us what you need, and we'll help map the next practical step.",
+    "allrightsreserved": "All rights reserved."
   }
 }

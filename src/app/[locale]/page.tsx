@@ -5,8 +5,16 @@ import Hero from "@/sections/Hero";
 import ProcessTimeline from "@/sections/ProcessTimeline";
 import Projects from "@/sections/Projects";
 import Team from "@/sections/Team";
+import { setRequestLocale } from "next-intl/server";
 
-export default function LocaleHomePage() {
+export default async function LocaleHomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <div className="min-h-screen">
       <Navbar />

@@ -8,17 +8,25 @@
     "contactUs": "Hubungi Kami"
   },
   "Hero": {
-    "badge": "Solusi Digital Masa Kini",
-    "title": "Solusi Digital Inovatif untuk <highlight>Masa Depan Bisnis Anda</highlight>",
-    "description": "Mengubah ide menjadi pengalaman digital luar biasa dengan teknologi terkini dan desain inovatif.",
-    "getStartedButton": "Mulai Sekarang",
-    "viewWorkButton": "Katakan Halo!",
-    "trustedBy": "Dibangun di Atas Fondasi:",
-    "reviews": "Komitmen Kami untuk Kesuksesan Anda"
+    "badge": "Desain Produk & Pengembangan Software",
+    "title": "Kami Membangun Produk Digital yang <highlight>Praktis</highlight>",
+    "description": "Kami merancang dan mengembangkan produk web dengan scope yang jelas, kode yang mudah dirawat, dan antarmuka yang nyaman digunakan.",
+    "getStartedButton": "Lihat Proyek",
+    "viewWorkButton": "Hubungi Kami",
+    "productReady": "interface siap pakai",
+    "maintainable": "mudah dirawat",
+    "trustedBy": "Dibangun dengan:",
+    "reviews": "delivery yang jelas"
   },
   "Projects": {
     "title": "Proyek Kami",
-    "description": "Solusi inovatif kami mencakup berbagai industri dan berusaha memberikan lebih dari yang terbaik untuk Anda.",
+    "description": "Beberapa produk dan eksperimen yang sudah kami bangun sambil terus mengasah kemampuan tim.",
+    "categories": {
+      "all": "Semua",
+      "ai": "AI",
+      "meeting": "Meeting",
+      "review": "Review"
+    },
     "projects": {
       "room": {
         "title": "Argo Room",
@@ -38,108 +46,105 @@
   },
   "ProcessTimeline": {
     "title": "Proses Pengembangan",
-    "description": "Pendekatan yang efisien untuk hasil yang maksimal",
+    "description": "Alur praktis untuk membangun produk yang mudah dirawat",
     "discovery": {
       "title": "Analisis",
-      "description": "Memahami visi dan kebutuhan anda"
+      "description": "Memperjelas tujuan, scope, pengguna, dan batasan"
     },
     "development": {
       "title": "Pengembangan",
-      "description": "Mengembangkan ide yang anda miliki dengan kode yang rapi"
+      "description": "Mengubah ide yang disepakati menjadi fitur produk"
     },
     "testing": {
       "title": "Pengujian",
-      "description": "Menjamin dan memastikan kualitas serta performa"
+      "description": "Mengecek alur utama, kualitas, dan performa dasar"
     },
     "deployment": {
       "title": "Peluncuran",
-      "description": "Membawa solusi digital anda ke dunia"
+      "description": "Menyiapkan rilis, hosting, dan monitoring dasar"
     },
     "optimization": {
       "title": "Optimasi",
-      "description": "Pemeliharan dan Peningkatan secara terus-menerus"
+      "description": "Meningkatkan produk dari penggunaan, temuan, dan prioritas"
     }
   },
   "Team": {
     "title": "Salam Kenal dari Kami",
-    "description": "Pakar berpengalaman yang siap bantu bikin solusi digital terbaik."
+    "description": "Tim kecil yang fokus pada desain produk dan rekayasa software"
   },
   "TeamMembers": {
     "afdal": {
       "name": "Afdal Ramdan Daman Huri",
       "role": "UI/UX Designer",
-      "bio": "gas fresh dari gemini wkwk"
+      "bio": "Mendesain alur yang jelas agar setiap layar mudah dipahami."
     },
     "aldy": {
       "name": "Aldy Akbarrizky",
       "role": "Full Stack Developer",
-      "bio": "Ikuti adik kecilmu ketika gacha"
+      "bio": "Membangun sistem andal yang tetap mudah dirawat dan dikembangkan."
     },
     "andrian": {
       "name": "Andrian Maulana Yusuf",
       "role": "Front End Developer",
-      "bio": "Jadilah dirimu dan jangan menyerah"
+      "bio": "Menjaga antarmuka cepat, konsisten, aksesibel, dan mudah digunakan."
     },
     "naufal": {
       "name": "Naufal Habib Hakim",
       "role": "Front End Developer",
-      "bio": "Satu-satunya batasan untuk realisasi kita akan hari esok adalah keraguan kita hari ini."
+      "bio": "Mengirim peningkatan terarah dengan perhatian pada setiap detail."
     }
   },
   "Approach": {
     "title": "Pendekatan Pengembangan",
-    "description": "Metodologi yang terstruktur dengan fokus pada kualitas, efisiensi, dan hasil yang memuaskan.",
+    "description": "Cara kerja sederhana yang fokus pada kejelasan, delivery, dan maintainability.",
     "approaches": {
       "discovery": {
         "title": "Penemuan & Strategi",
-        "description": "Kami memulai dengan memahami secara mendalam tujuan bisnis, kebutuhan pengguna, dan persyaratan teknis untuk menyusun peta jalan yang menyeluruh."
+        "description": "Kami mulai dengan memperjelas tujuan, pengguna, scope, dan batasan teknis sebelum menentukan apa yang perlu dibangun."
       },
       "design": {
         "title": "Desain & Arsitektur",
-        "description": "Proses desain kami mengutamakan keseimbangan antara estetika dan fungsionalitas, sementara arsitektur teknis memastikan skalabilitas dan performa optimal."
+        "description": "Kami membentuk antarmuka dan struktur teknis secara beriringan agar produk tetap nyaman digunakan dan mudah dirawat."
       },
       "agile": {
-        "title": "Pengembangan Agile",
-        "description": "Kami menerapkan metodologi agile dengan sprint dua mingguan, integrasi berkelanjutan, dan pembaruan rutin untuk menjaga transparansi."
+        "title": "Pengembangan Bertahap",
+        "description": "Kami membagi pekerjaan menjadi bagian kecil, membagikan progres dengan jelas, dan menyesuaikan prioritas saat produk membutuhkannya."
       },
       "testing": {
         "title": "Pengujian & Jaminan Kualitas",
-        "description": "Protokol pengujian yang ketat, pipeline CI/CD otomatis, dan proses QA yang menyeluruh memastikan perangkat lunak yang andal dan bebas dari bug."
+        "description": "Kami mengecek alur utama, edge case, tampilan responsif, dan performa sebelum pekerjaan diserahkan."
       },
       "launch": {
         "title": "Peluncuran & Optimasi",
-        "description": "Kami memastikan proses peluncuran berjalan lancar serta menyediakan pemantauan pasca peluncuran, optimasi, dan dukungan untuk peningkatan berkelanjutan."
+        "description": "Kami menyiapkan deployment dengan hati-hati dan tetap membuka ruang perbaikan setelah produk mulai digunakan."
       },
       "continuous": {
-        "title": "Inovasi Berkelanjutan",
-        "description": "Kami selalu mengikuti tren teknologi terkini dan secara rutin memberikan saran peningkatan serta fitur baru agar produk tetap unggul di pasar."
+        "title": "Peningkatan Berkelanjutan",
+        "description": "Kami memilih peningkatan yang berguna dan terukur dibanding menambah fitur yang tidak menyelesaikan kebutuhan nyata."
       }
     },
-    "title2": "Keunggulan Kami",
-    "description2": "Kami berbeda karena punya kombinasi unik antara keahlian teknis, cara berpikir kreatif, dan komitmen penuh terhadap kesuksesan Anda. Kami tidak hanya sekadar mengembangkan aplikasi — kami merancang solusi digital yang dapat membantu bisnis anda terus maju.",
+    "title2": "Cara Kami Bekerja",
+    "description2": "Kami masih terus bertumbuh, jadi fokus kami sederhana: memahami masalah, membangun dengan rapi, berkomunikasi dengan jelas, dan menjaga produk tetap mudah dikembangkan.",
     "keyfeatures": {
-      "expertise": "Keahlian di bidang industri dan pemahaman mendalam terhadap bidang terkait",
-      "fullStack": "Kemampuan pengembangan full-stack di berbagai teknologi",
-      "userCentered": "Filosofi desain yang berorientasi pada pengguna untuk pengalaman luar biasa",
-      "scalableArch": "Arsitektur yang dapat diskalakan dan tumbuh bersama bisnis Anda",
-      "ongoingSupport": "Dukungan berkelanjutan dan peningkatan terus-menerus"
+      "expertise": "Kebutuhan dibuat jelas sebelum implementasi dimulai",
+      "fullStack": "Implementasi full-stack untuk kebutuhan produk yang fokus",
+      "userCentered": "Keputusan antarmuka yang berorientasi pada pengguna",
+      "scalableArch": "Arsitektur yang mudah dirawat dan dikembangkan",
+      "ongoingSupport": "Handoff transparan dan iterasi yang praktis"
     }
   },
   "Footer": {
     "title": "Solid Techno ID",
-    "description": "Mengubah ide menjadi pengalaman digital luar biasa dengan teknologi terkini dan desain inovatif.",
+    "description": "Tim software kecil yang membangun produk web dan alat digital yang praktis.",
     "quicklink": "Tautan",
     "home": "Beranda",
     "projects": "Proyek",
-    "clients": "Klien",
-    "experience": "Pengalaman",
+    "team": "Tim",
+    "process": "Proses",
     "approach": "Pendekatan",
     "contact": "Kontak",
-    "subscribe": "Langganan",
-    "subscribedesc": "Dapatkan info terbaru dan update dari kami langsung ke email anda.",
-    "allrightsreserved": "Semua hak cipta dilindungi.",
-    "privacypolicy": "Kebijakan Privasi",
-    "termsofservice": "Syarat dan Ketentuan Layanan",
-    "cookiepolicy": "Kebijakan Cookie"
+    "subscribe": "Diskusi Proyek",
+    "subscribedesc": "Ceritakan kebutuhan digital Anda, kami akan bantu petakan langkah berikutnya.",
+    "allrightsreserved": "Semua hak cipta dilindungi."
   }
 }

@@ -1,14 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "@/components/mode-toogle";
-import { Code2, Menu, X } from "lucide-react";
+import { ModeToggle } from "@/components/mode-toggle";
+import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./language-switcher";
 import Link from "next/link";
 import Image from "next/image";
 import SolidSVG from "@/assets/images/Solid SVG.svg";
-// import Link from "next-intl";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,10 +16,16 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const nextIsScrolled = window.scrollY > 10;
+      setIsScrolled((currentIsScrolled) =>
+        currentIsScrolled === nextIsScrolled
+          ? currentIsScrolled
+          : nextIsScrolled
+      );
     };
 
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -42,7 +47,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container px-4 mx-auto flex items-center justify-between">
-        <Link href="#" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <Image src={SolidSVG} alt="Solid Logo" width={28} height={28} />
           <span className="font-bold text-xl">{t("brandName")}</span>
         </Link>
@@ -59,11 +64,14 @@ export default function Navbar() {
             </Link>
           ))}
           <Button
+            asChild
             variant="default"
             size="sm"
-            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700"
           >
-            {t("contactUs")}
+            <Link href="mailto:ptsolidsejatheraselamanya@gmail.com">
+              {t("contactUs")}
+            </Link>
           </Button>
           <ModeToggle />
           <LanguageSwitcher />
@@ -106,13 +114,16 @@ export default function Navbar() {
             </Link>
           ))}
           <Button
+            asChild
             variant="default"
-            className="w-full mt-4 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+            className="w-full mt-4 bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700"
             onClick={() => {
               toggleMenu();
             }}
           >
-            {t("contactUs")}
+            <Link href="mailto:ptsolidsejatheraselamanya@gmail.com">
+              {t("contactUs")}
+            </Link>
           </Button>
         </nav>
       </div>

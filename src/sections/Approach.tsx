@@ -9,6 +9,7 @@ import {
   Zap,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 const approaches = [
   {
@@ -20,13 +21,13 @@ const approaches = [
   {
     id: 2,
     slug: "design",
-    icon: <Code2 className="h-12 w-12 text-purple-500 opacity-80" />,
+    icon: <Code2 className="h-12 w-12 text-violet-600 opacity-80" />,
     delay: 200,
   },
   {
     id: 3,
     slug: "agile",
-    icon: <Rocket className="h-12 w-12 text-blue-500 opacity-80" />,
+    icon: <Rocket className="h-12 w-12 text-cyan-600 opacity-80" />,
     delay: 300,
   },
   {
@@ -60,7 +61,7 @@ const featureKeys = [
 const Approach = () => {
   const t = useTranslations("Approach");
   return (
-    <section id="approach" className="py-20 bg-background/50">
+    <section id="approach" className="py-20 bg-background">
       <div className="container px-4 mx-auto">
         <AnimateIn from="bottom">
           <div className="max-w-2xl mx-auto text-center mb-16">
@@ -75,7 +76,7 @@ const Approach = () => {
           {approaches.map((approach) => (
             <AnimateIn key={approach.id} from="bottom" delay={approach.delay}>
               <BentoCard
-                className="h-full hover:border-purple-500/50 transition-all"
+                className="h-full hover:border-primary/40 transition-all"
                 gradient
               >
                 <div className="flex justify-center mb-6">{approach.icon}</div>
@@ -91,7 +92,7 @@ const Approach = () => {
         </div>
 
         <AnimateIn from="bottom" delay={700}>
-          <div className="mt-20 bg-gradient-to-r from-purple-900/20 to-blue-900/20 backdrop-blur-sm rounded-lg p-8 border border-purple-500/20">
+          <div className="mt-20 rounded-lg border border-border/80 bg-card p-8 shadow-sm">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-2xl font-bold mb-4">{t("title2")}</h3>
@@ -101,19 +102,21 @@ const Approach = () => {
                 <ul className="space-y-3">
                   {featureKeys.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <div className="min-w-4 min-h-4 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 mt-1.5" />
+                      <div className="min-w-4 min-h-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-600 mt-1.5" />
                       <span>{t(`keyfeatures.${item}`)}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-blue-500/10 rounded-lg" />
+                <div className="absolute inset-0 rounded-lg bg-accent/50" />
                 <div className="relative aspect-video rounded-lg overflow-hidden">
-                  <img
+                  <Image
                     src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     alt="Team working together"
-                    className="w-full h-full object-cover"
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-cover"
                   />
                 </div>
               </div>
