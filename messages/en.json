@@ -1,0 +1,150 @@
+{
+  "Navbar": {
+    "brandName": "Solid Techno ID",
+    "projects": "Projects",
+    "team": "Team",
+    "process": "Process",
+    "approach": "Approach",
+    "contactUs": "Contact Us"
+  },
+  "Hero": {
+    "badge": "Product Design & Software Development",
+    "title": "We Build <highlight>Practical</highlight> Digital Products",
+    "description": "We design and develop focused web products with clear scope, maintainable code, and usable interfaces.",
+    "getStartedButton": "View Projects",
+    "viewWorkButton": "Contact Us",
+    "productReady": "product-ready interface",
+    "maintainable": "maintainable",
+    "trustedBy": "Built around:",
+    "reviews": "clear delivery"
+  },
+  "Projects": {
+    "title": "Our Projects",
+    "description": "A small selection of products and experiments our team has built while sharpening our craft.",
+    "categories": {
+      "all": "All",
+      "ai": "AI",
+      "meeting": "Meeting",
+      "review": "Review"
+    },
+    "projects": {
+      "room": {
+        "title": "Argo Room",
+        "description": "A simple and reliable platform for hosting online meetings, enabling seamless communication through video, audio, and screen sharing features."
+      },
+      "ai": {
+        "title": "Argo AI",
+        "description": "An AI-driven image editing tool that lets you easily remove backgrounds, enhance quality, and apply smart adjustments with just a few clicks."
+      },
+      "cv": {
+        "title": "Argo CV",
+        "description": "An AI-powered applicant tracking system that streamlines the recruitment process by automating resume screening and interview scheduling."
+      }
+    },
+    "view": "View Project",
+    "viewall": "View All Projects"
+  },
+  "ProcessTimeline": {
+    "title": "Our Development Process",
+    "description": "A practical flow for building maintainable products",
+    "discovery": {
+      "title": "Discovery",
+      "description": "Clarifying goals, scope, users, and constraints"
+    },
+    "development": {
+      "title": "Development",
+      "description": "Turning agreed ideas into working product features"
+    },
+    "testing": {
+      "title": "Testing",
+      "description": "Checking usability, quality, and core performance"
+    },
+    "deployment": {
+      "title": "Deployment",
+      "description": "Preparing release, hosting, and basic monitoring"
+    },
+    "optimization": {
+      "title": "Optimization",
+      "description": "Improving based on usage, findings, and priorities"
+    }
+  },
+  "Team": {
+    "title": "Meet Our Team",
+    "description": "A small team focused on product design and software engineering"
+  },
+  "TeamMembers": {
+    "afdal": {
+      "name": "Afdal Ramdan Daman Huri",
+      "role": "UI/UX Designer",
+      "bio": "Design clear flows that make every screen easier to understand."
+    },
+    "aldy": {
+      "name": "Aldy Akbarrizky",
+      "role": "Full Stack Developer",
+      "bio": "Build reliable systems that stay simple to maintain and extend."
+    },
+    "andrian": {
+      "name": "Andrian Maulana Yusuf",
+      "role": "Front End Developer",
+      "bio": "Keep interfaces fast, consistent, accessible, and easy to use."
+    },
+    "naufal": {
+      "name": "Naufal Habib Hakim",
+      "role": "Front End Developer",
+      "bio": "Ship focused improvements with careful attention to every detail."
+    }
+  },
+  "Approach": {
+    "title": "Our Development Approach",
+    "description": "A simple working method focused on clarity, delivery, and maintainability.",
+    "approaches": {
+      "discovery": {
+        "title": "Discovery & Strategy",
+        "description": "We start by clarifying goals, users, scope, and technical constraints before deciding what to build."
+      },
+      "design": {
+        "title": "Design & Architecture",
+        "description": "We shape interfaces and technical structure together so the product stays usable and maintainable."
+      },
+      "agile": {
+        "title": "Iterative Development",
+        "description": "We break work into small batches, share progress clearly, and adjust priorities when the product needs it."
+      },
+      "testing": {
+        "title": "Testing & Quality Assurance",
+        "description": "We check core flows, edge cases, responsiveness, and performance before handing work over."
+      },
+      "launch": {
+        "title": "Launch & Optimization",
+        "description": "We prepare deployment carefully and keep room for improvements after real usage begins."
+      },
+      "continuous": {
+        "title": "Continuous Improvement",
+        "description": "We prefer steady, useful improvements over adding features that do not solve a real need."
+      }
+    },
+    "title2": "How We Work",
+    "description2": "We are still growing, so our focus is straightforward: understand the problem, build carefully, communicate clearly, and keep the product easy to improve.",
+    "keyfeatures": {
+      "expertise": "Clear requirements before implementation starts",
+      "fullStack": "Full-stack implementation for focused product needs",
+      "userCentered": "User-focused interface decisions",
+      "scalableArch": "Maintainable architecture that can evolve",
+      "ongoingSupport": "Transparent handoff and practical iteration"
+    }
+  },
+  "Footer": {
+    "title": "Solid Techno ID",
+    "description": "A small software team building practical web products and digital tools.",
+    "quicklink": "Quick Links",
+    "home": "Home",
+    "projects": "Projects",
+    "team": "Team",
+    "process": "Process",
+    "approach": "Approach",
+    "contact": "Contact",
+    "subscribe": "Start a Project",
+    "subscribedesc": "Tell us what you need, and we'll help map the next practical step.",
+    "allrightsreserved": "All rights reserved."
+  }
+}

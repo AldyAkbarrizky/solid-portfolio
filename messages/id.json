@@ -1,0 +1,150 @@
+{
+  "Navbar": {
+    "brandName": "Solid Techno ID",
+    "projects": "Proyek",
+    "team": "Tim",
+    "process": "Proses",
+    "approach": "Pendekatan",
+    "contactUs": "Hubungi Kami"
+  },
+  "Hero": {
+    "badge": "Desain Produk & Pengembangan Software",
+    "title": "Kami Membangun Produk Digital yang <highlight>Praktis</highlight>",
+    "description": "Kami merancang dan mengembangkan produk web dengan scope yang jelas, kode yang mudah dirawat, dan antarmuka yang nyaman digunakan.",
+    "getStartedButton": "Lihat Proyek",
+    "viewWorkButton": "Hubungi Kami",
+    "productReady": "interface siap pakai",
+    "maintainable": "mudah dirawat",
+    "trustedBy": "Dibangun dengan:",
+    "reviews": "delivery yang jelas"
+  },
+  "Projects": {
+    "title": "Proyek Kami",
+    "description": "Beberapa produk dan eksperimen yang sudah kami bangun sambil terus mengasah kemampuan tim.",
+    "categories": {
+      "all": "Semua",
+      "ai": "AI",
+      "meeting": "Meeting",
+      "review": "Review"
+    },
+    "projects": {
+      "room": {
+        "title": "Argo Room",
+        "description": "Platform yang sederhana dan andal untuk mengadakan pertemuan online, memungkinkan komunikasi lancar melalui fitur video, audio, dan berbagi layar."
+      },
+      "ai": {
+        "title": "Argo AI",
+        "description": "Alat pengedit gambar berbasis AI yang memudahkan Anda melakukan manipulasi terhadap gambar hanya dalam beberapa klik."
+      },
+      "cv": {
+        "title": "Argo CV",
+        "description": "Sistem pelacakan pelamar berbasis AI yang menyederhanakan proses perekrutan dengan otomatisasi penyaringan resume dan penjadwalan wawancara."
+      }
+    },
+    "view": "Lihat Proyek",
+    "viewall": "Lihat Semua Proyek"
+  },
+  "ProcessTimeline": {
+    "title": "Proses Pengembangan",
+    "description": "Alur praktis untuk membangun produk yang mudah dirawat",
+    "discovery": {
+      "title": "Analisis",
+      "description": "Memperjelas tujuan, scope, pengguna, dan batasan"
+    },
+    "development": {
+      "title": "Pengembangan",
+      "description": "Mengubah ide yang disepakati menjadi fitur produk"
+    },
+    "testing": {
+      "title": "Pengujian",
+      "description": "Mengecek alur utama, kualitas, dan performa dasar"
+    },
+    "deployment": {
+      "title": "Peluncuran",
+      "description": "Menyiapkan rilis, hosting, dan monitoring dasar"
+    },
+    "optimization": {
+      "title": "Optimasi",
+      "description": "Meningkatkan produk dari penggunaan, temuan, dan prioritas"
+    }
+  },
+  "Team": {
+    "title": "Salam Kenal dari Kami",
+    "description": "Tim kecil yang fokus pada desain produk dan rekayasa software"
+  },
+  "TeamMembers": {
+    "afdal": {
+      "name": "Afdal Ramdan Daman Huri",
+      "role": "UI/UX Designer",
+      "bio": "Mendesain alur yang jelas agar setiap layar mudah dipahami."
+    },
+    "aldy": {
+      "name": "Aldy Akbarrizky",
+      "role": "Full Stack Developer",
+      "bio": "Membangun sistem andal yang tetap mudah dirawat dan dikembangkan."
+    },
+    "andrian": {
+      "name": "Andrian Maulana Yusuf",
+      "role": "Front End Developer",
+      "bio": "Menjaga antarmuka cepat, konsisten, aksesibel, dan mudah digunakan."
+    },
+    "naufal": {
+      "name": "Naufal Habib Hakim",
+      "role": "Front End Developer",
+      "bio": "Mengirim peningkatan terarah dengan perhatian pada setiap detail."
+    }
+  },
+  "Approach": {
+    "title": "Pendekatan Pengembangan",
+    "description": "Cara kerja sederhana yang fokus pada kejelasan, delivery, dan maintainability.",
+    "approaches": {
+      "discovery": {
+        "title": "Penemuan & Strategi",
+        "description": "Kami mulai dengan memperjelas tujuan, pengguna, scope, dan batasan teknis sebelum menentukan apa yang perlu dibangun."
+      },
+      "design": {
+        "title": "Desain & Arsitektur",
+        "description": "Kami membentuk antarmuka dan struktur teknis secara beriringan agar produk tetap nyaman digunakan dan mudah dirawat."
+      },
+      "agile": {
+        "title": "Pengembangan Bertahap",
+        "description": "Kami membagi pekerjaan menjadi bagian kecil, membagikan progres dengan jelas, dan menyesuaikan prioritas saat produk membutuhkannya."
+      },
+      "testing": {
+        "title": "Pengujian & Jaminan Kualitas",
+        "description": "Kami mengecek alur utama, edge case, tampilan responsif, dan performa sebelum pekerjaan diserahkan."
+      },
+      "launch": {
+        "title": "Peluncuran & Optimasi",
+        "description": "Kami menyiapkan deployment dengan hati-hati dan tetap membuka ruang perbaikan setelah produk mulai digunakan."
+      },
+      "continuous": {
+        "title": "Peningkatan Berkelanjutan",
+        "description": "Kami memilih peningkatan yang berguna dan terukur dibanding menambah fitur yang tidak menyelesaikan kebutuhan nyata."
+      }
+    },
+    "title2": "Cara Kami Bekerja",
+    "description2": "Kami masih terus bertumbuh, jadi fokus kami sederhana: memahami masalah, membangun dengan rapi, berkomunikasi dengan jelas, dan menjaga produk tetap mudah dikembangkan.",
+    "keyfeatures": {
+      "expertise": "Kebutuhan dibuat jelas sebelum implementasi dimulai",
+      "fullStack": "Implementasi full-stack untuk kebutuhan produk yang fokus",
+      "userCentered": "Keputusan antarmuka yang berorientasi pada pengguna",
+      "scalableArch": "Arsitektur yang mudah dirawat dan dikembangkan",
+      "ongoingSupport": "Handoff transparan dan iterasi yang praktis"
+    }
+  },
+  "Footer": {
+    "title": "Solid Techno ID",
+    "description": "Tim software kecil yang membangun produk web dan alat digital yang praktis.",
+    "quicklink": "Tautan",
+    "home": "Beranda",
+    "projects": "Proyek",
+    "team": "Tim",
+    "process": "Proses",
+    "approach": "Pendekatan",
+    "contact": "Kontak",
+    "subscribe": "Diskusi Proyek",
+    "subscribedesc": "Ceritakan kebutuhan digital Anda, kami akan bantu petakan langkah berikutnya.",
+    "allrightsreserved": "Semua hak cipta dilindungi."
+  }
+}
