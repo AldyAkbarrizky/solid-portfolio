@@ -23,9 +23,9 @@
     "description": "Beberapa produk dan eksperimen yang sudah kami bangun sambil terus mengasah kemampuan tim.",
     "categories": {
       "all": "Semua",
-      "ai": "AI",
-      "meeting": "Meeting",
-      "review": "Review"
+      "ai": "AI & Otomasi",
+      "business": "Tools Bisnis",
+      "consumer": "Web Konsumen"
     },
     "projects": {
       "room": {
@@ -39,6 +39,10 @@
       "cv": {
         "title": "Argo CV",
         "description": "Sistem pelacakan pelamar berbasis AI yang menyederhanakan proses perekrutan dengan otomatisasi penyaringan resume dan penjadwalan wawancara."
+      },
+      "girby": {
+        "title": "Girby Clothes",
+        "description": "Website e-commerce untuk brand lokal Indonesia yang menjual pakaian anak-anak, dirancang agar koleksi produk mudah dijelajahi dan pembelian terasa praktis."
       }
     },
     "view": "Lihat Proyek",
