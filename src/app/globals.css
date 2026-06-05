@@ -7,6 +7,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-plus-jakarta);
+  --font-display: var(--font-plus-jakarta);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -45,24 +46,24 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(0.982 0.006 255);
-  --foreground: oklch(0.22 0.026 260);
-  --card: oklch(0.998 0.002 255);
-  --card-foreground: oklch(0.22 0.026 260);
-  --popover: oklch(0.998 0.002 255);
-  --popover-foreground: oklch(0.22 0.026 260);
-  --primary: oklch(0.55 0.205 280);
-  --primary-foreground: oklch(0.99 0.004 255);
-  --secondary: oklch(0.94 0.018 255);
-  --secondary-foreground: oklch(0.26 0.035 260);
-  --muted: oklch(0.94 0.014 255);
-  --muted-foreground: oklch(0.48 0.032 260);
-  --accent: oklch(0.935 0.028 270);
-  --accent-foreground: oklch(0.26 0.04 270);
+  --background: #f7f7ff;
+  --foreground: #151329;
+  --card: #ffffff;
+  --card-foreground: #151329;
+  --popover: #ffffff;
+  --popover-foreground: #151329;
+  --primary: #6443c4;
+  --primary-foreground: #ffffff;
+  --secondary: #ece8fb;
+  --secondary-foreground: #251f45;
+  --muted: #eceef7;
+  --muted-foreground: #62657a;
+  --accent: #dcd6f7;
+  --accent-foreground: #251f45;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.885 0.018 255);
-  --input: oklch(0.885 0.018 255);
-  --ring: oklch(0.61 0.17 278);
+  --border: #d9dcef;
+  --input: #d9dcef;
+  --ring: #6443c4;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -79,24 +80,24 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #090814;
+  --foreground: #f4f2ff;
+  --card: #111022;
+  --card-foreground: #f4f2ff;
+  --popover: #111022;
+  --popover-foreground: #f4f2ff;
+  --primary: #8f7cf6;
+  --primary-foreground: #090814;
+  --secondary: #171529;
+  --secondary-foreground: #f4f2ff;
+  --muted: #1c1a31;
+  --muted-foreground: #aaa6c4;
+  --accent: #282247;
+  --accent-foreground: #f4f2ff;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --border: rgb(220 214 247 / 14%);
+  --input: rgb(220 214 247 / 16%);
+  --ring: #8f7cf6;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -116,7 +117,49 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
   body {
     @apply bg-background text-foreground;
+    overflow-x: clip;
+    background-image:
+      radial-gradient(circle at 18% 12%, color-mix(in oklch, var(--primary) 14%, transparent), transparent 30rem),
+      radial-gradient(circle at 88% 8%, color-mix(in oklch, var(--accent) 18%, transparent), transparent 28rem),
+      linear-gradient(180deg, color-mix(in oklch, var(--background) 92%, white), var(--background));
+    background-attachment: fixed;
+    letter-spacing: 0;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-plus-jakarta), sans-serif;
+  }
+
+  .section-kicker {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-primary;
+  }
+
+  .section-title {
+    @apply font-display text-3xl font-bold leading-tight tracking-normal md:text-4xl;
+  }
+
+  .editorial-surface {
+    @apply border border-border/70 bg-card/80 shadow-sm backdrop-blur-xl;
+  }
+
+  .grain-overlay {
+    background-image:
+      linear-gradient(90deg, rgb(255 255 255 / 0.035) 1px, transparent 1px),
+      linear-gradient(rgb(255 255 255 / 0.028) 1px, transparent 1px);
+    background-size: 42px 42px;
+  }
+
+  .dark .grain-overlay {
+    background-image:
+      linear-gradient(90deg, rgb(255 255 255 / 0.045) 1px, transparent 1px),
+      linear-gradient(rgb(255 255 255 / 0.035) 1px, transparent 1px);
   }
 }

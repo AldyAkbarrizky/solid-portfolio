@@ -23,16 +23,19 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-card border-t border-border">
+    <footer className="relative overflow-hidden border-t border-border bg-card/90">
+      <div className="grain-overlay absolute inset-0 opacity-20" />
       <div className="container px-4 mx-auto">
-        <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="relative grid grid-cols-1 gap-8 py-14 md:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_1fr_1fr]">
           <AnimateIn from="bottom" delay={100}>
             <div>
               <Link href="/" className="flex items-center gap-3 mb-4">
                 <Image src={SolidSVG} alt="Solid Logo" width={28} height={28} />
                 <span className="font-bold text-xl">{t("title")}</span>
               </Link>
-              <p className="text-muted-foreground mb-4">{t("description")}</p>
+              <p className="mb-5 max-w-sm leading-7 text-muted-foreground">
+                {t("description")}
+              </p>
               <div className="flex items-center gap-4">
                 <Link
                   href="https://www.instagram.com/solidtechno.id/"
@@ -57,7 +60,9 @@ const Footer = () => {
           </AnimateIn>
           <AnimateIn from="bottom" delay={200}>
             <div>
-              <h3 className="font-bold text-lg mb-4">{t("quicklink")}</h3>
+              <h3 className="mb-4 text-sm font-bold uppercase tracking-[0.16em] text-muted-foreground">
+                {t("quicklink")}
+              </h3>
               <ul className="space-y-3">
                 {quickLinks.map((item) => (
                   <li key={item.href}>
@@ -74,7 +79,9 @@ const Footer = () => {
           </AnimateIn>
           <AnimateIn from="bottom" delay={300}>
             <div>
-              <h3 className="font-bold text-lg mb-4">{t("contact")}</h3>
+              <h3 className="mb-4 text-sm font-bold uppercase tracking-[0.16em] text-muted-foreground">
+                {t("contact")}
+              </h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
@@ -86,7 +93,7 @@ const Footer = () => {
                 <li className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-primary" />
                   <span className="text-muted-foreground w-full">
-                    +62 877-7872-1893
+                    +62 851-5623-0293
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -95,16 +102,24 @@ const Footer = () => {
                     ptsolidsejatheraselamanya@gmail.com
                   </span>
                 </li>
+                <li className="flex items-center gap-3">
+                  <Mail className="h-5 w-5 text-primary" />
+                  <span className="text-muted-foreground w-full truncate">
+                    aldyakbarrizky18@gmail.com
+                  </span>
+                </li>
               </ul>
             </div>
           </AnimateIn>
           <AnimateIn from="bottom" delay={400}>
             <div>
-              <h3 className="font-bold text-lg mb-4">{t("subscribe")}</h3>
+              <h3 className="mb-4 font-display text-2xl font-semibold">
+                {t("subscribe")}
+              </h3>
               <p className="text-muted-foreground mb-4">{t("subscribedesc")}</p>
               <Button
                 asChild
-                className="w-full bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700"
+                className="w-full rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
               >
                 <Link href="mailto:ptsolidsejatheraselamanya@gmail.com">
                   {t("contact")}
@@ -113,7 +128,7 @@ const Footer = () => {
             </div>
           </AnimateIn>
         </div>
-        <div className="py-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="relative flex flex-col items-center justify-between gap-4 border-t border-border py-6 md:flex-row">
           <p className="text-sm text-muted-foreground">
             © {currentYear} Solid Techno ID. {t("allrightsreserved")}
           </p>

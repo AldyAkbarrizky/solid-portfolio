@@ -10,13 +10,13 @@ interface GlowingButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function GlowingButton({
   className,
-  glowColor = "rgba(255, 255, 255, 0.5)",
+  glowColor = "rgba(100, 67, 196, 0.35)",
   children,
   href,
   ...props
 }: GlowingButtonProps) {
   const glowClassName = cn(
-    "group relative inline-flex h-12 overflow-hidden rounded-lg bg-gradient-to-r from-violet-600 to-cyan-600 px-8 py-3 font-medium text-white transition-all hover:from-violet-700 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2",
+    "group relative inline-flex h-12 overflow-hidden rounded-full bg-primary px-8 py-3 font-semibold text-primary-foreground shadow-[0_18px_45px_rgb(0_0_0/0.16)] transition-all hover:-translate-y-0.5 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:ring-offset-2",
     className
   );
 

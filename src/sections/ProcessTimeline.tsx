@@ -35,15 +35,17 @@ const ProcessTimeline = () => {
   return (
     <section
       id="process"
-      className="py-20 bg-background relative overflow-hidden"
+      className="relative overflow-hidden bg-background py-24"
     >
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="container px-4 mx-auto">
         <AnimateIn from="bottom">
-          <div className="max-w-2xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {t("title")}
-            </h2>
-            <p className="text-lg text-muted-foreground">{t("description")}</p>
+          <div className="mx-auto mb-16 max-w-3xl text-center">
+            <p className="section-kicker">{t("kicker")}</p>
+            <h2 className="mt-3 section-title">{t("title")}</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-muted-foreground">
+              {t("description")}
+            </p>
           </div>
         </AnimateIn>
 

@@ -8,7 +8,6 @@
     "contactUs": "Hubungi Kami"
   },
   "Hero": {
-    "badge": "Desain Produk & Pengembangan Software",
     "title": "Kami Membangun Produk Digital yang <highlight>Praktis</highlight>",
     "description": "Kami merancang dan mengembangkan produk web dengan scope yang jelas, kode yang mudah dirawat, dan antarmuka yang nyaman digunakan.",
     "getStartedButton": "Lihat Proyek",
@@ -16,9 +15,62 @@
     "productReady": "interface siap pakai",
     "maintainable": "mudah dirawat",
     "trustedBy": "Dibangun dengan:",
-    "reviews": "delivery yang jelas"
+    "reviews": "delivery yang jelas",
+    "capabilities": {
+      "strategy": {
+        "title": "Produk jelas",
+        "description": "scope sebelum layar"
+      },
+      "build": {
+        "title": "Build full-stack",
+        "description": "implementasi fokus"
+      },
+      "launch": {
+        "title": "Rilis tenang",
+        "description": "handoff yang bekerja"
+      }
+    },
+    "canvasKicker": "Delivery canvas",
+    "canvasTitle": "Dari brief berantakan ke produk yang dipakai",
+    "canvasMetricLabel": "Cara kami menjaga progres",
+    "canvasMetricValue": "3 langkah",
+    "canvasSteps": {
+      "scope": {
+        "title": "Petakan kebutuhan nyata",
+        "description": "Memperjelas user, flow, batasan, dan ukuran berhasil."
+      },
+      "interface": {
+        "title": "Bentuk produknya",
+        "description": "Desain layar dan arsitektur dibahas bersamaan."
+      },
+      "release": {
+        "title": "Rilis dengan handoff",
+        "description": "Menyiapkan rilis, catatan QA, dan arah iterasi berikutnya."
+      }
+    },
+    "canvasBoardTitle": "Working board",
+    "canvasBoardStatus": "selaras",
+    "canvasBoard": {
+      "brief": {
+        "title": "Brief diterjemahkan",
+        "description": "Tujuan bisnis menjadi layar, flow, dan tugas teknis."
+      },
+      "prototype": {
+        "title": "Prototype direview",
+        "description": "Interaksi utama dicek sebelum implementasi penuh."
+      },
+      "handoff": {
+        "title": "Build siap diserahkan",
+        "description": "Kode, catatan deployment, dan keputusan produk tetap jelas."
+      }
+    },
+    "proofOneLabel": "Fokus",
+    "proofOneValue": "scope produk ramping",
+    "proofTwoLabel": "Output",
+    "proofTwoValue": "sistem web yang nyaman"
   },
   "Projects": {
+    "kicker": "Karya terpilih",
     "title": "Proyek Kami",
     "description": "Beberapa produk dan eksperimen yang sudah kami bangun sambil terus mengasah kemampuan tim.",
     "categories": {
@@ -37,8 +89,8 @@
         "description": "Alat pengedit gambar berbasis AI yang memudahkan Anda melakukan manipulasi terhadap gambar hanya dalam beberapa klik."
       },
       "cv": {
-        "title": "Argo CV",
-        "description": "Sistem pelacakan pelamar berbasis AI yang menyederhanakan proses perekrutan dengan otomatisasi penyaringan resume dan penjadwalan wawancara."
+        "title": "Solid CV",
+        "description": "Platform review CV yang memberi skor pada resume, menyoroti struktur, kejelasan, dan relevansi, lalu memberi saran perbaikan yang bisa langsung diterapkan sebelum melamar."
       },
       "girby": {
         "title": "Girby Clothes",
@@ -49,6 +101,7 @@
     "viewall": "Lihat Semua Proyek"
   },
   "ProcessTimeline": {
+    "kicker": "Alur delivery",
     "title": "Proses Pengembangan",
     "description": "Alur praktis untuk membangun produk yang mudah dirawat",
     "discovery": {
@@ -73,6 +126,7 @@
     }
   },
   "Team": {
+    "kicker": "Tim kami",
     "title": "Salam Kenal dari Kami",
     "description": "Tim kecil yang fokus pada desain produk dan rekayasa software"
   },
@@ -99,6 +153,7 @@
     }
   },
   "Approach": {
+    "kicker": "Prinsip kerja",
     "title": "Pendekatan Pengembangan",
     "description": "Cara kerja sederhana yang fokus pada kejelasan, delivery, dan maintainability.",
     "approaches": {
@@ -127,6 +182,7 @@
         "description": "Kami memilih peningkatan yang berguna dan terukur dibanding menambah fitur yang tidak menyelesaikan kebutuhan nyata."
       }
     },
+    "agreementKicker": "Kesepakatan kerja",
     "title2": "Cara Kami Bekerja",
     "description2": "Kami masih terus bertumbuh, jadi fokus kami sederhana: memahami masalah, membangun dengan rapi, berkomunikasi dengan jelas, dan menjaga produk tetap mudah dikembangkan.",
     "keyfeatures": {

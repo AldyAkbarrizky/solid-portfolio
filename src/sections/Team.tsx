@@ -1,5 +1,5 @@
 import Bozz from "@/assets/images/Afdal Square.webp";
-import Dyxon from "@/assets/images/Aldy Square.webp";
+import Dyxon from "@/assets/images/Aldy Akbarrizky.webp";
 import Jekzz from "@/assets/images/Jek Square.webp";
 import Habibz from "@/assets/images/Naufal Anak Baik.webp";
 import { AnimateIn } from "@/components/ui/animate-in";
@@ -54,17 +54,22 @@ const Team = () => {
   const t = useTranslations("Team");
   const t2 = useTranslations("TeamMembers");
   return (
-    <section id="team" className="py-20 bg-muted/30">
+    <section
+      id="team"
+      className="relative overflow-hidden bg-secondary/45 py-24"
+    >
+      <div className="grain-overlay absolute inset-0 opacity-25" />
       <div className="container px-4 mx-auto">
         <AnimateIn from="bottom">
-          <div className="max-w-2xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {t("title")}
-            </h2>
-            <p className="text-lg text-muted-foreground">{t("description")}</p>
+          <div className="relative mx-auto mb-14 max-w-3xl text-center">
+            <p className="section-kicker">{t("kicker")}</p>
+            <h2 className="mt-3 section-title">{t("title")}</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-muted-foreground">
+              {t("description")}
+            </p>
           </div>
         </AnimateIn>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="relative grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
           {team.map((member, index) => {
             const memberName = t2(`${member.id}.name`);
             const socialLinks = [
@@ -83,19 +88,19 @@ const Team = () => {
 
             return (
               <AnimateIn key={member.id} from="bottom" delay={index * 100}>
-                <BentoCard className="group h-full">
-                  <div className="relative overflow-hidden rounded-lg mb-4 aspect-square">
+                <BentoCard className="group h-full" gradient={index % 2 === 0}>
+                  <div className="relative mb-5 overflow-hidden rounded-2xl border border-border/60 aspect-[4/5] bg-background/50">
                     <Image
                       src={member.image}
                       alt={memberName}
                       fill
                       sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
                       placeholder="blur"
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                     />
                     {socialLinks.length > 0 && (
                       <>
-                        <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                           <div className="flex justify-center gap-2">
                             {socialLinks.map((socialLink) => {
@@ -125,13 +130,13 @@ const Team = () => {
                       </>
                     )}
                   </div>
-                  <h3 className="min-h-12 text-lg font-semibold mb-1">
-                    {memberName}
-                  </h3>
-                  <p className="text-sm text-primary mb-2">
+                  <p className="mb-3 inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
                     {t2(`${member.id}.role`)}
                   </p>
-                  <p className="min-h-16 text-sm text-muted-foreground">
+                  <h3 className="min-h-14 font-display text-2xl font-semibold leading-none">
+                    {memberName}
+                  </h3>
+                  <p className="mt-4 min-h-20 text-sm leading-6 text-muted-foreground">
                     {t2(`${member.id}.bio`)}
                   </p>
                 </BentoCard>
