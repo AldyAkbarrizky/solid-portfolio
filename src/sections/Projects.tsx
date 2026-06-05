@@ -3,7 +3,7 @@ import ProjectFilterGrid from "@/components/ProjectFilterGrid";
 import { useTranslations } from "next-intl";
 import Room from "@/assets/images/Argo Room.webp";
 import AI from "@/assets/images/Argo AI.webp";
-import CV from "@/assets/images/CV-Solid.png";
+import CV from "@/assets/images/Solid CV.png";
 import Girby from "@/assets/images/Girby Clothes.webp";
 
 const projects = [
@@ -29,7 +29,7 @@ const projects = [
     image: CV,
     tags: ["React", "Node.js", "NextJS", "Review"],
     categories: ["ai", "business"],
-    link: "https://cv-review.solidtechno.com",
+    link: "https://cv.solidtechno.com",
   },
   {
     id: 4,
@@ -51,14 +51,19 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-muted/30">
+    <section
+      id="projects"
+      className="relative overflow-hidden bg-secondary/45 py-24"
+    >
+      <div className="grain-overlay absolute inset-0 opacity-35" />
       <div className="container px-4 mx-auto">
         <AnimateIn from="bottom">
-          <div className="max-w-2xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              {t("title")}
-            </h2>
-            <p className="text-lg text-muted-foreground">{t("description")}</p>
+          <div className="relative mx-auto mb-14 max-w-3xl text-center">
+            <p className="section-kicker">{t("kicker")}</p>
+            <h2 className="mt-3 section-title">{t("title")}</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-muted-foreground">
+              {t("description")}
+            </p>
           </div>
         </AnimateIn>
 

@@ -8,7 +8,6 @@
     "contactUs": "Contact Us"
   },
   "Hero": {
-    "badge": "Product Design & Software Development",
     "title": "We Build <highlight>Practical</highlight> Digital Products",
     "description": "We design and develop focused web products with clear scope, maintainable code, and usable interfaces.",
     "getStartedButton": "View Projects",
@@ -16,9 +15,62 @@
     "productReady": "product-ready interface",
     "maintainable": "maintainable",
     "trustedBy": "Built around:",
-    "reviews": "clear delivery"
+    "reviews": "clear delivery",
+    "capabilities": {
+      "strategy": {
+        "title": "Product clarity",
+        "description": "scope before screens"
+      },
+      "build": {
+        "title": "Full-stack build",
+        "description": "focused implementation"
+      },
+      "launch": {
+        "title": "Calm release",
+        "description": "handoff that works"
+      }
+    },
+    "canvasKicker": "Delivery canvas",
+    "canvasTitle": "From messy brief to usable product",
+    "canvasMetricLabel": "How we keep work moving",
+    "canvasMetricValue": "3 steps",
+    "canvasSteps": {
+      "scope": {
+        "title": "Scope the real need",
+        "description": "Clarify users, flows, constraints, and success signals."
+      },
+      "interface": {
+        "title": "Shape the product",
+        "description": "Design screens and architecture together, not separately."
+      },
+      "release": {
+        "title": "Ship with handoff",
+        "description": "Prepare the release, QA notes, and next iteration path."
+      }
+    },
+    "canvasBoardTitle": "Working board",
+    "canvasBoardStatus": "in sync",
+    "canvasBoard": {
+      "brief": {
+        "title": "Brief translated",
+        "description": "Business goals become screens, flows, and technical tasks."
+      },
+      "prototype": {
+        "title": "Prototype reviewed",
+        "description": "Core interactions are checked before full implementation."
+      },
+      "handoff": {
+        "title": "Build packaged",
+        "description": "Code, deployment notes, and product decisions stay traceable."
+      }
+    },
+    "proofOneLabel": "Focus",
+    "proofOneValue": "lean product scope",
+    "proofTwoLabel": "Output",
+    "proofTwoValue": "usable web systems"
   },
   "Projects": {
+    "kicker": "Selected work",
     "title": "Our Projects",
     "description": "A small selection of products and experiments our team has built while sharpening our craft.",
     "categories": {
@@ -37,8 +89,8 @@
         "description": "An AI-driven image editing tool that lets you easily remove backgrounds, enhance quality, and apply smart adjustments with just a few clicks."
       },
       "cv": {
-        "title": "Argo CV",
-        "description": "An AI-powered applicant tracking system that streamlines the recruitment process by automating resume screening and interview scheduling."
+        "title": "Solid CV",
+        "description": "A CV review platform that scores resumes, highlights structure, clarity, and relevance, and gives practical improvement suggestions before candidates apply."
       },
       "girby": {
         "title": "Girby Clothes",
@@ -49,6 +101,7 @@
     "viewall": "View All Projects"
   },
   "ProcessTimeline": {
+    "kicker": "How delivery moves",
     "title": "Our Development Process",
     "description": "A practical flow for building maintainable products",
     "discovery": {
@@ -73,6 +126,7 @@
     }
   },
   "Team": {
+    "kicker": "The people",
     "title": "Meet Our Team",
     "description": "A small team focused on product design and software engineering"
   },
@@ -99,6 +153,7 @@
     }
   },
   "Approach": {
+    "kicker": "Working principles",
     "title": "Our Development Approach",
     "description": "A simple working method focused on clarity, delivery, and maintainability.",
     "approaches": {
@@ -127,6 +182,7 @@
         "description": "We prefer steady, useful improvements over adding features that do not solve a real need."
       }
     },
+    "agreementKicker": "Working agreement",
     "title2": "How We Work",
     "description2": "We are still growing, so our focus is straightforward: understand the problem, build carefully, communicate clearly, and keep the product easy to improve.",
     "keyfeatures": {

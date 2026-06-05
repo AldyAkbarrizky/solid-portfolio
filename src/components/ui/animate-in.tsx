@@ -26,15 +26,15 @@ export function AnimateIn({
   const getInitialStyles = () => {
     switch (from) {
       case "bottom":
-        return "translate-y-10 opacity-0";
+        return "translate-y-12 opacity-0 blur-sm";
       case "top":
-        return "-translate-y-10 opacity-0";
+        return "-translate-y-12 opacity-0 blur-sm";
       case "left":
-        return "-translate-x-10 opacity-0";
+        return "-translate-x-12 opacity-0 blur-sm";
       case "right":
-        return "translate-x-10 opacity-0";
+        return "translate-x-12 opacity-0 blur-sm";
       case "scale":
-        return "scale-95 opacity-0";
+        return "scale-95 opacity-0 blur-sm";
       case "opacity":
         return "opacity-0";
       default:
@@ -52,7 +52,7 @@ export function AnimateIn({
           setIsVisible(false);
         }
       },
-      { threshold: 0.1 }
+      { rootMargin: "0px 0px -12% 0px", threshold: 0.16 }
     );
 
     const currentRef = ref.current;
@@ -71,9 +71,9 @@ export function AnimateIn({
     <div
       ref={ref}
       className={cn(
-        "transition-all",
+        "transform-gpu transition-all ease-[cubic-bezier(0.16,1,0.3,1)]",
         isVisible
-          ? "translate-y-0 translate-x-0 scale-100 opacity-100"
+          ? "translate-y-0 translate-x-0 scale-100 opacity-100 blur-0"
           : getInitialStyles(),
         className
       )}

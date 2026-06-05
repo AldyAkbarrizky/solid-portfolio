@@ -42,14 +42,16 @@ export default function Navbar() {
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/80 backdrop-blur-md shadow-md py-3"
+          ? "bg-background/78 backdrop-blur-xl border-b border-border/60 py-3"
           : "bg-transparent py-5"
       }`}
     >
       <div className="container px-4 mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex min-w-0 items-center gap-2 sm:gap-3">
           <Image src={SolidSVG} alt="Solid Logo" width={28} height={28} />
-          <span className="font-bold text-xl">{t("brandName")}</span>
+          <span className="truncate text-lg font-bold sm:text-xl">
+            {t("brandName")}
+          </span>
         </Link>
 
         {/* Desktop navigation */}
@@ -58,7 +60,7 @@ export default function Navbar() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {item.label}
             </Link>
@@ -67,7 +69,7 @@ export default function Navbar() {
             asChild
             variant="default"
             size="sm"
-            className="bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700"
+            className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
           >
             <Link href="mailto:ptsolidsejatheraselamanya@gmail.com">
               {t("contactUs")}
@@ -78,7 +80,7 @@ export default function Navbar() {
         </nav>
 
         {/* Mobile menu button */}
-        <div className="flex items-center md:hidden gap-4">
+        <div className="flex shrink-0 items-center gap-1 sm:gap-2 md:hidden">
           <ModeToggle />
           <LanguageSwitcher />
           <Button
@@ -116,7 +118,7 @@ export default function Navbar() {
           <Button
             asChild
             variant="default"
-            className="w-full mt-4 bg-gradient-to-r from-violet-600 to-cyan-600 hover:from-violet-700 hover:to-cyan-700"
+            className="w-full mt-4 rounded-full bg-primary text-primary-foreground hover:bg-primary/90"
             onClick={() => {
               toggleMenu();
             }}

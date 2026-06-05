@@ -33,10 +33,10 @@ export default function BentoCard({
   return (
     <Card
       className={cn(
-        "overflow-hidden border-border/80 bg-card shadow-sm transition-all duration-200",
-        hover && "hover:shadow-md hover:-translate-y-1",
+        "overflow-hidden rounded-2xl border-border/70 bg-card/82 shadow-sm backdrop-blur transition-all duration-300",
+        hover && "hover:-translate-y-1 hover:shadow-[0_22px_70px_rgb(0_0_0/0.12)]",
         gradient &&
-          "bg-gradient-to-br from-card via-card to-accent/60 dark:border-0 dark:from-purple-900/20 dark:to-blue-900/20",
+          "bg-[linear-gradient(135deg,color-mix(in_oklch,var(--card)_92%,white),color-mix(in_oklch,var(--accent)_24%,var(--card)))] dark:bg-[linear-gradient(135deg,color-mix(in_oklch,var(--card)_90%,white_4%),color-mix(in_oklch,var(--accent)_30%,var(--card)))]",
         className
       )}
     >

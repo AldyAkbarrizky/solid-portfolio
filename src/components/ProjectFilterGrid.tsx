@@ -53,17 +53,17 @@ export default function ProjectFilterGrid({
   return (
     <>
       <AnimateIn from="bottom" delay={200}>
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="mx-auto mb-10 flex w-fit max-w-full flex-wrap justify-center rounded-full border border-border/70 bg-card/70 p-1 shadow-sm backdrop-blur">
           {categories.map((category) => (
             <Button
               key={category.id}
-              variant={activeCategory === category.id ? "default" : "outline"}
-              size="lg"
+              variant="ghost"
+              size="sm"
               onClick={() => setActiveCategory(category.id)}
               className={
                 activeCategory === category.id
-                  ? "bg-gradient-to-r from-violet-600 to-cyan-600"
-                  : ""
+                  ? "rounded-full bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground"
+                  : "rounded-full text-muted-foreground hover:text-foreground"
               }
             >
               {category.label}
@@ -72,50 +72,62 @@ export default function ProjectFilterGrid({
         </div>
       </AnimateIn>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((project, index) => (
           <AnimateIn key={project.id} from="bottom" delay={100 * (index + 1)}>
-            <BentoCard className="h-full group" gradient>
-              <div className="relative overflow-hidden rounded-lg mb-4 h-48">
+            <BentoCard className="group h-full" gradient>
+              <div className="mb-4 flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                    Project {String(project.id).padStart(2, "0")}
+                  </p>
+                  <h3 className="mt-2 text-xl font-bold leading-tight">
+                    {project.title}
+                  </h3>
+                </div>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="icon"
+                  className="h-10 w-10 shrink-0 rounded-full bg-background/50"
+                >
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${viewLabel}: ${project.title}`}
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+
+              <div className="relative mb-4 h-44 overflow-hidden rounded-xl border border-border/60 bg-background/60">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  sizes="(min-width: 1024px) 30vw, (min-width: 768px) 50vw, 100vw"
                   placeholder="blur"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <Badge
-                      key={tag}
-                      variant="secondary"
-                      className="bg-background/30 backdrop-blur-sm"
-                    >
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-muted-foreground mb-4">
+
+              <p className="min-h-24 text-sm leading-6 text-muted-foreground">
                 {project.description}
               </p>
-              <Button
-                asChild
-                variant="ghost"
-                className="flex items-center gap-2 px-0 hover:bg-primary/10 hover:text-primary"
-              >
-                <Link
-                  href={project.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`${viewLabel}: ${project.title}`}
-                >
-                  {viewLabel} <ExternalLink className="h-4 w-4" />
-                </Link>
-              </Button>
+
+              <div className="mt-5 flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <Badge
+                    key={tag}
+                    variant="secondary"
+                    className="rounded-full border border-border/60 bg-background/60 px-3 py-1 text-xs text-muted-foreground"
+                  >
+                    {tag}
+                  </Badge>
+                ))}
+              </div>
             </BentoCard>
           </AnimateIn>
         ))}
@@ -125,7 +137,7 @@ export default function ProjectFilterGrid({
         <Button
           type="button"
           variant="outline"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 rounded-full bg-card/70"
           onClick={() => setActiveCategory("all")}
         >
           {viewAllLabel} <ArrowRight className="h-4 w-4" />

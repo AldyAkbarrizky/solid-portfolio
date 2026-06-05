@@ -51,7 +51,8 @@ export default function TimelineList({ steps }: TimelineListProps) {
   }, []);
 
   return (
-    <div ref={timelineRef} className="max-w-4xl mx-auto">
+    <div ref={timelineRef} className="relative mx-auto max-w-5xl">
+      <div className="absolute left-6 top-6 hidden h-[calc(100%-3rem)] w-px bg-border md:block" />
       {steps.map((step, index) => {
         const Icon = stepIcons[step.id as keyof typeof stepIcons] ?? Lightbulb;
 
@@ -59,38 +60,52 @@ export default function TimelineList({ steps }: TimelineListProps) {
           <div
             key={step.id}
             data-step={index}
-            className="relative flex items-start last:mb-0"
+            className="relative grid gap-5 pb-5 md:grid-cols-[4rem_1fr] md:pb-4"
           >
-            <div className="flex flex-col items-center mr-6">
+            <div className="relative z-10 flex items-start justify-start md:justify-center">
               <div
                 className={cn(
-                  "w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-500",
+                  "flex h-12 w-12 items-center justify-center rounded-full border transition-all duration-500",
                   index <= activeStep
-                    ? "bg-gradient-to-r from-violet-600 to-cyan-600 text-white"
-                    : "bg-muted text-muted-foreground"
+                    ? "border-primary/40 bg-primary text-primary-foreground shadow-[0_16px_45px_rgb(0_0_0/0.16)]"
+                    : "border-border bg-card text-muted-foreground"
                 )}
               >
                 <Icon className="h-6 w-6" />
               </div>
-              {index < steps.length - 1 && (
-                <div
-                  className={cn(
-                    "w-0.5 h-20 transition-colors duration-500",
-                    index < activeStep
-                      ? "bg-gradient-to-b from-violet-600 to-cyan-600"
-                      : "bg-muted"
-                  )}
-                />
-              )}
             </div>
             <AnimateIn
               from={index % 2 === 0 ? "right" : "left"}
               delay={index * 100}
               className="flex-1"
             >
-              <div className="bg-card p-6 rounded-lg border border-border/80 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                <p className="text-muted-foreground">{step.description}</p>
+              <div
+                className={cn(
+                  "editorial-surface rounded-2xl p-6 transition-all duration-500",
+                  index === activeStep && "border-primary/45 bg-card"
+                )}
+              >
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                      Step {String(index + 1).padStart(2, "0")}
+                    </p>
+                    <h3 className="mt-2 font-display text-2xl font-semibold">
+                      {step.title}
+                    </h3>
+                  </div>
+                  <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted sm:mt-3 sm:w-32">
+                    <div
+                      className={cn(
+                        "h-full rounded-full bg-primary transition-all duration-700",
+                        index <= activeStep ? "w-full" : "w-0"
+                      )}
+                    />
+                  </div>
+                </div>
+                <p className="mt-4 max-w-2xl leading-7 text-muted-foreground">
+                  {step.description}
+                </p>
               </div>
             </AnimateIn>
           </div>
