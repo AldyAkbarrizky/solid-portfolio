@@ -95,6 +95,10 @@
       "girby": {
         "title": "Girby Clothes",
         "description": "Website e-commerce untuk brand lokal Indonesia yang menjual pakaian anak-anak, dirancang agar koleksi produk mudah dijelajahi dan pembelian terasa praktis."
+      },
+      "umkm": {
+        "title": "Solid UMKM",
+        "description": "Website untuk membantu UMKM tampil profesional lewat company profile, halaman admin, dan form pemesanan produk yang memudahkan pelanggan melakukan order."
       }
     },
     "view": "Lihat Proyek",

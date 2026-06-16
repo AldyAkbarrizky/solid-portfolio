@@ -5,6 +5,7 @@ import Room from "@/assets/images/Argo Room.webp";
 import AI from "@/assets/images/Argo AI.webp";
 import CV from "@/assets/images/Solid CV.png";
 import Girby from "@/assets/images/Girby Clothes.webp";
+import UMKM from "@/assets/images/Solid UMKM.webp";
 
 const projects = [
   {
@@ -38,6 +39,14 @@ const projects = [
     tags: ["NextJS", "Node.js", "E-Commerce"],
     categories: ["consumer"],
     link: "https://girby-dev.solidtechno.com",
+  },
+  {
+    id: 5,
+    label: "umkm",
+    image: UMKM,
+    tags: ["NextJS", "Node.js", "Company Profile", "Admin"],
+    categories: ["business", "consumer"],
+    link: "https://umkm.solidtechno.com",
   },
 ];
 
